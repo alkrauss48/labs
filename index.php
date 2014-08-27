@@ -23,6 +23,7 @@
   map.setMapTypeId('map_style');
 
   // Run through all .geo.json files in ./geojson/, and load them into the map
+  // Check out a lot of GeoJSON files at https://github.com/johan/world.geo.json
   <?php
     $dir = new DirectoryIterator('glob://' . dirname(__FILE__) . '/geojson/*.geo.json');
     foreach ($dir as $fileinfo) {
@@ -39,6 +40,7 @@
     strokeWeight: 0
   });
 
+  // Custom marker using SVG-like paths
   var flag = {
     path: 'M101.833,27.216c-23.822,9.851-52.008-8.612-62.597-16.627l0.109-5.358' +
       ' c-1.326-0.429-2.797-0.653-4.363-0.513C28.79,5.275,22.566,2.792,22.566,2.792s0.008-0.002,0.021-0.007' +

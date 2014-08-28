@@ -3,7 +3,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script>
   // Set basic map attributes
-  var map, polys = [];
   var mapOptions = {
     zoom:   5,
     center: new google.maps.LatLng(38.16,-98.72),
@@ -18,7 +17,7 @@
   var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
 
   // create the map object, and set it to be styled
-  map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
 

@@ -49,7 +49,7 @@
     strokeWeight: 0
   };
 
-  // Create a flag marker
+  // Create a marker
   var marker = new google.maps.Marker({
     position: new google.maps.LatLng(35.4822, -97.5350),
     icon:     star,

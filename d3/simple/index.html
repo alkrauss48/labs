@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="d3.js"></script>
+    <script>
+      function draw(data) {
+        "use strict";
+        // badass visualization code goes here
+        d3.select("body")
+        .append("ul")
+        .selectAll("li")
+        .data(data)
+        .enter()
+        .append("li")
+        .style("font-weight", function (d) {
+          if (d.status == "GOOD SERVICE"){
+            return "normal";
+          } else {
+            return "bold";
+          }
+        })
+        .text(function (d) {
+          return d.name + ": " + d.status;
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      d3.json("data/service_status.json", draw);
+    </script>
+  </body>
+</html>

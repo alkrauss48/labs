@@ -20,14 +20,14 @@ varying vec4 vUV;
 varying vec2 vBumpUV;
 
 void main(void) {
-	vec4 outPosition = worldViewProjection * vec4(position, 1.0);
-	gl_Position = outPosition;
-	
-	vPositionW = vec3(world * vec4(position, 1.0));
-	vNormalW = normalize(vec3(world * vec4(normal, 0.0)));
+  vec4 outPosition = worldViewProjection * vec4(position, 1.0);
+  gl_Position = outPosition;
 
-	vUV = outPosition;
+  vPositionW = vec3(world * vec4(position, 1.0));
+  vNormalW = normalize(vec3(world * vec4(normal, 0.0)));
 
-	vec2 bumpTexCoord = vec2(windMatrix * vec4(uv, 0.0, 1.0));
-	vBumpUV = bumpTexCoord / waveData.x;
+  vUV = outPosition;
+
+  vec2 bumpTexCoord = vec2(windMatrix * vec4(uv, 0.0, 1.0));
+  vBumpUV = bumpTexCoord / waveData.x;
 }

@@ -9,7 +9,7 @@
         var engine = new BABYLON.Engine(canvas, true);
 
         //Creating scene
-        scene = createSceneTuto(engine);
+        var scene = createScene(engine);
 
         scene.activeCamera.attachControl(canvas);
 

@@ -1,4 +1,4 @@
-﻿function createSceneTuto(engine) {
+﻿function createScene(engine) {
     //Creation of the scene
     var canvas = document.getElementById("renderCanvas");
     var scene = new BABYLON.Scene(engine);

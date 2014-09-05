@@ -4,7 +4,7 @@
         BABYLON.Material.call(this, name, scene);
         this.light = light;
 
-        this.bumpTexture = new BABYLON.Texture("./RealWater/bump.png", scene);
+        this.bumpTexture = new BABYLON.Texture("./images/bump.png", scene);
         this.bumpTexture.uScale = 2;
         this.bumpTexture.vScale = 2;
         this.bumpTexture.wrapU = BABYLON.Texture.MIRROR_ADDRESSMODE;
@@ -64,7 +64,7 @@
             return false;
         }
 
-        this._effect = engine.createEffect("./RealWater/water",
+        this._effect = engine.createEffect("./flux/water",
             ["position", "normal", "uv"],
             ["worldViewProjection", "world", "view", "vLightPosition", "vEyePosition", "waterColor", "vLevels", "waveData", "windMatrix"],
             ["reflectionSampler", "refractionSampler", "bumpSampler"],

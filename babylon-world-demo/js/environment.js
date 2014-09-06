@@ -3,8 +3,9 @@
   var canvas  = document.getElementById("renderCanvas");
   var scene   = new BABYLON.Scene(engine);
   var light   = new BABYLON.PointLight("Omni", new BABYLON.Vector3(10, 50, 50), scene);
-  var camera  = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 15, 0), scene);
+  var camera  = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 30, 0), scene);
 
+  // setInterval(function(){ camera.cameraDirection.z += 0.1; }, 1000);
 
   // Define Skybox
   var skybox = BABYLON.Mesh.CreateBox("skyBox", 100.0, scene);
@@ -48,6 +49,13 @@
   waterMaterial.refractionTexture.renderList.push(ground);
   waterMaterial.reflectionTexture.renderList.push(skybox);
   water.material = waterMaterial;
+
+  scene.collisionsEnabled = true;
+  camera.checkCollisions = true;
+  camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
+
+  ground.checkCollisions = true;
+  extraGround.checkCollisions = true;
 
   return scene;
 }

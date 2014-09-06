@@ -3,7 +3,7 @@
   var canvas  = document.getElementById("renderCanvas");
   var scene   = new BABYLON.Scene(engine);
   var light   = new BABYLON.PointLight("Omni", new BABYLON.Vector3(10, 50, 50), scene);
-  var camera  = new BABYLON.ArcRotateCamera("Camera", 0, 1.2, 30, new BABYLON.Vector3(-10,10,0), scene);
+  var camera  = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 15, 0), scene);
 
 
   // Define Skybox

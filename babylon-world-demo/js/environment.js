@@ -5,8 +5,6 @@
   var light   = new BABYLON.PointLight("Omni", new BABYLON.Vector3(10, 50, 50), scene);
   var camera  = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 30, 0), scene);
 
-  // setInterval(function(){ camera.cameraDirection.z += 0.1; }, 1000);
-
   // Define Skybox
   var skybox = BABYLON.Mesh.CreateBox("skyBox", 100.0, scene);
   var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
@@ -57,14 +55,19 @@
   ground.checkCollisions = true;
   extraGround.checkCollisions = true;
 
-  scene.gravity = new BABYLON.Vector3(0, -0.1, 0);
-  camera.applyGravity = true;
-
   // Add first person shooter controls
   camera.keysUp.push(87);
   camera.keysLeft.push(65);
   camera.keysRight.push(68);
   camera.keysDown.push(83);
+
+  // Toggle spacebar to toggle gravity
+  scene.gravity = new BABYLON.Vector3(0, -0.1, 0);
+  window.addEventListener('keydown',function(event){
+    if (event.keyCode==32){
+      camera.applyGravity = !camera.applyGravity;
+    }
+  });
 
   return scene;
 }

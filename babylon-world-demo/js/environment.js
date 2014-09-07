@@ -57,5 +57,14 @@
   ground.checkCollisions = true;
   extraGround.checkCollisions = true;
 
+  scene.gravity = new BABYLON.Vector3(0, -0.1, 0);
+  camera.applyGravity = true;
+
+  // Add first person shooter controls
+  camera.keysUp.push(87);
+  camera.keysLeft.push(65);
+  camera.keysRight.push(68);
+  camera.keysDown.push(83);
+
   return scene;
 }

@@ -13,6 +13,7 @@ require('./lib/outbound.js');
 $(document).ready(function(){
   $container = $('.wrapper');
   $container.masonry(function(){
+    columnWidth: ".grid-sizer",
     itemSelector: 'div'
   });
 

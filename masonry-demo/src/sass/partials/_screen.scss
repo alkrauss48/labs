@@ -11,7 +11,8 @@ $susy: (
 );
 /* End SUSY Grid */
 
-main div {
+.grid-sizer { width: 25%; }
+.item {
   width: 25%;
   display: inline-block;
   height: 14em;
@@ -23,6 +24,9 @@ main div {
   &.giant {
     width: 50%;
     height: 25em;
+  }
+  &:hover {
+    opacity: .7;
   }
 }
 .red { background-color: red; }

@@ -11,23 +11,58 @@ require('./lib/console-support.js');
 require('./lib/outbound.js');
 
 $(document).ready(function(){
-  $container = $('.wrapper');
-  $container.masonry(function(){
+
+  var transitionProp = getStyleProperty('transition');
+  var transitionEndEvent = {
+    WebkitTransition: 'webkitTransitionEnd',
+    MozTransition: 'transitionend',
+    OTransition: 'otransitionend',
+    transition: 'transitionend'
+  }[ transitionProp ];
+
+  $container = $('.wrapper').masonry({
     columnWidth: ".grid-sizer",
-    itemSelector: 'div'
+    itemSelector: ".item"
   });
 
-  $container.find('div').click(function(){
-    $(this).siblings().removeClass('giant');
-    $(this).toggleClass('giant');
-    $container.masonry(function(){
-      itemSelector: 'div'
+  $container.on( 'click', '.item-content', function( event ) {
+    var $this = $(this);
+    var previousContentSize = getSize( this );
+    // disable transition
+    this.style[ transitionProp ] = 'none';
+    // set current size
+    $this.css({
+      width: previousContentSize.width,
+      height: previousContentSize.height
     });
-  });
 
-  $('#red').click(function(){ $container.masonry({ filter: '.red' }) });
-  $('#green').click(function(){ $container.masonry({ filter: '.green' }) });
-  $('#blue').click(function(){ $container.masonry({ filter: '.blue' }) });
-  $('#yellow').click(function(){ $container.masonry({ filter: '.yellow' }) });
-  $('#all').click(function(){ $container.masonry({ filter: '*' }) });
+    // $(this).parent().siblings().removeClass('giant');
+    var $itemElem = $this.parent().toggleClass('giant');
+
+    // force redraw
+    var redraw = this.offsetWidth;
+
+    // renable default transition
+    this.style[ transitionProp ] = '';
+
+    // reset 100%/100% sizing after transition end
+    if ( transitionProp ) {
+      var _this = this;
+      var onTransitionEnd = function() {
+        _this.style.width = '';
+        _this.style.height = '';
+      };
+      $this.one( transitionEndEvent, onTransitionEnd );
+    }
+
+    // set new size
+    var size = getSize( $itemElem[0] );
+    $this.css({
+      width: size.width,
+      height: size.height
+    });
+
+    $container.masonry();
+
+  });
 });

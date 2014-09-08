@@ -1,0 +1,17 @@
+// Main App SCSS File
+// Centralize your imports here
+
+// Ruby gems
+@import "compass";
+@import "susy";
+
+// Bower packages
+@import "../../vendor/bower_components/normalize-scss/normalize";
+
+// Base Icon Fonts
+@import "partials/base-icon-fonts";
+
+// Custom stylesheets
+@import "partials/defaults";
+@import "partials/utilities";
+@import "partials/screen";

@@ -1,0 +1,35 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ */
+
+
+/* Start SUSY Grid */
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 2/3, // The size of a gutter in relation to a single column
+  column-width: 3em,
+  use-custom: (
+    clearfix: true
+  )
+);
+/* End SUSY Grid */
+
+main div {
+  width: 25%;
+  display: inline-block;
+  height: 14em;
+  border: 1px solid black;
+  box-sizing: border-box;
+  &:nth-of-type(4n + 1) { height: 12em; }
+  &:nth-of-type(4n + 2) { height: 8em; }
+  &:nth-of-type(4n + 3) { height: 10em; }
+  &.giant {
+    width: 50%;
+    height: 25em;
+  }
+}
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.yellow { background-color: yellow; }
+

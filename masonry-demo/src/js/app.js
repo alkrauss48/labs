@@ -24,20 +24,30 @@ $(function() {
 
     var color = { 0: 'red', 1: 'blue', 2: 'yellow', 3: 'green' }
 
-    $container = $('.wrapper').masonry({
-      columnWidth: ".grid-sizer",
+    $container = $('.wrapper').isotope({
+      masonry: {
+        columnWidth: ".grid-sizer",
+      },
       itemSelector: ".item"
+    });
+
+    _.each(['red', 'green', 'blue', 'yellow', 'all'], function(val){
+      $('a.sort-' + val).click(function(event){
+        event.preventDefault();
+        var filter = val === 'all' ? '*' : '.' + val + '-container';
+        $container.isotope({filter: filter});
+      });
     });
 
     $('a.more-boxes').click(function(event){
       event.preventDefault();
       for(var x = 0; x < 4; x++){
-        var div = jQuery('<div/>', { class: 'item' });
+        var div = jQuery('<div/>', { class: 'item ' + color[x] + '-container' });
         div.append('<div class="item-content ' + color[x] + '"></div>');
         $container.append(div);
-        $container.masonry( 'addItems', $('.item:last') )
+        $container.isotope( 'addItems', $('.item:last') )
       }
-      $container.masonry()
+      $container.isotope()
     });
 
 
@@ -78,7 +88,7 @@ $(function() {
         height: size.height
       });
 
-      $container.masonry();
+      $container.isotope();
 
     });
   });

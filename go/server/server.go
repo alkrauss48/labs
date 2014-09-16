@@ -1,17 +1,30 @@
 package main
 
 import (
+  "fmt"
   "io/ioutil"
   "html/template"
   "net/http"
   "regexp"
   "errors"
+  "gopkg.in/mgo.v2"
+  "code.google.com/p/gcfg"
 )
 
 var templates = template.Must(template.ParseFiles(
   "templates/edit.html", "templates/view.html"))
 
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
+
+var cfg Config
+
+type Config struct {
+  Adapter struct {
+    Server string
+    Database string
+    Collection string
+  }
+}
 
 type Page struct {
   Title string
@@ -87,6 +100,11 @@ func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.Hand
 }
 
 func main() {
+  err := gcfg.ReadFileInto(&cfg, "config/config.gcfg")
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
   http.HandleFunc("/view/", makeHandler(viewHandler))
   http.HandleFunc("/edit/", makeHandler(editHandler))
   http.HandleFunc("/save/", makeHandler(saveHandler))

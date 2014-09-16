@@ -1,0 +1,5 @@
+; Go Wiki Config
+[adapter]
+server = 127.0.0.1
+database = go_wiki
+collection = pages

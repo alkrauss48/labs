@@ -6,6 +6,7 @@ require('underscore');
 
 // Gives 'console' polyfills to browsers that don't use 'console'
 require('./lib/console-support.js');
+require('../../vendor/bower_components/jquery-infinite-scroll/jquery.infinitescroll.js');
 
 // Tracks outbound-link activity through Google Analytics
 require('./lib/outbound.js');
@@ -13,6 +14,7 @@ require('./lib/outbound.js');
 
 $(function() {
   $(document).ready(function(){
+
 
     var transitionProp = getStyleProperty('transition');
     var transitionEndEvent = {
@@ -29,6 +31,12 @@ $(function() {
         columnWidth: ".grid-sizer",
       },
       itemSelector: ".item"
+    });
+
+    $container.infinitescroll({
+      // other options
+    }, function(new_elements) {
+      $('a.more-boxes').trigger('click');
     });
 
     _.each(['red', 'green', 'blue', 'yellow', 'all'], function(val){

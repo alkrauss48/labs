@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="form-horizontal custom_body">
-      <a class="pull-left btn btn-small btn-primary" href="http://thesocietea.org/tea_steep_chart/">Tea Chart</a>
+      <a class="pull-left btn btn-small btn-primary" href="http://labs.thesocietea.org/tea-chart">Tea Chart</a>
     </div>
     <br />
     <header class="jumbotron">

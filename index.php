@@ -8,3 +8,5 @@
   <li><a href="tea-timer">Tea Timer</a></li>
   <li><a href="tea-chart">Tea Steep Chart</a></li>
 </ul>
+
+<?php include 'analytics.php'; ?>

@@ -25,5 +25,6 @@
 </head>
 <body>
   <canvas id="canvas"></canvas>
+  <?php include '../analytics.php'; ?>
 </body>
 </html>

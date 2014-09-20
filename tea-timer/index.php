@@ -44,20 +44,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/sprintf/0.0.7/sprintf.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/howler/1.1.17/howler.min.js" type="text/javascript"></script>
     <script src="scripts/jquery.timer_methods.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      // Set some google analyitics basics
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38589428-1']);
-      _gaq.push(['_setDomainName', 'thesocietea.org']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+    <?php include '../analytics.php'; ?>
   </body>
 </html>
 

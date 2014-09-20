@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tea Timers - The Societea</title>
-    <base href="tea-timer/" target="" />
+    <base href="/tea-timer/" target="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tea Timers">
     <meta name="author" content="Aaron L. Krauss">

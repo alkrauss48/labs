@@ -1,14 +1,12 @@
 $(document).ready(function readySetGo() {
   var selects = $('select[id^=tea], select[id^=steeping]');
 
-  // Uses howler.js to make the sounds
-  // Made by our very own local Goldfire Studios
   var sound = new Howl({
-    urls: ['assets/sounds/bell.wav', 'assets/sounds/bell.mp3'],
+    urls: ['sounds/bell.wav', 'sounds/bell.mp3'],
   });
 
   var teas = {
-    white:    { one:    2,  two:  2.5,  three:  3,     temp:   "160 - 170 F°" },
+    white:    { one:    .1,  two:  2.5,  three:  3,     temp:   "160 - 170 F°" },
     yellow:   { one:    2,  two:  2.5,  three:  3,     temp:   "170 - 180 F°" },
     green:    { one:    2,  two:  2.5,  three:  3,     temp:   "170 - 180 F°" },
     oolong:   { one:    2,  two:  2.5,  three:  3,     temp:   "180 - 195 F°" },
@@ -26,8 +24,9 @@ $(document).ready(function readySetGo() {
 
   // Preliminary cookie loading
   selects.each(function set_cookies(){
-    if(getCookie($(this).attr('id')) != null)
-      $(this).val(getCookie($(this).attr('id')));
+    if($.cookie($(this).attr('id'))){
+      $(this).val($.cookie($(this).attr('id')));
+    }
     $(this).trigger('change');
   });
 
@@ -43,8 +42,8 @@ $(document).ready(function readySetGo() {
     $d.find('button[id^=clear]').trigger('click');
 
     // Set the cookies so the users preferences will be saved
-    setCookie($tea.attr('id'), $tea.val(), 30);
-    setCookie($steeping.attr('id'), $steeping.val(), 30);
+    $.cookie($tea.attr('id'), $tea.val(), { expire: 30 });
+    $.cookie($steeping.attr('id'), $steeping.val(), { expire: 30});
     $timer.data('time',
         teas[$tea.find('option:selected').val()]
             [$steeping.find('option:selected').val()] * 60);

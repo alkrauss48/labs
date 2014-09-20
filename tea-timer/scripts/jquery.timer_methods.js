@@ -6,7 +6,7 @@ $(document).ready(function readySetGo() {
   });
 
   var teas = {
-    white:    { one:    .1,  two:  2.5,  three:  3,     temp:   "160 - 170 F°" },
+    white:    { one:    2,  two:  2.5,  three:  3,     temp:   "160 - 170 F°" },
     yellow:   { one:    2,  two:  2.5,  three:  3,     temp:   "170 - 180 F°" },
     green:    { one:    2,  two:  2.5,  three:  3,     temp:   "170 - 180 F°" },
     oolong:   { one:    2,  two:  2.5,  three:  3,     temp:   "180 - 195 F°" },

@@ -24,19 +24,19 @@
       <section class="active">
         <p class="title" data-section-title><a href="#chart">Chart</a></p>
         <div class="content" data-slug="chart" data-section-content data-html="chart">
-          <?php include 'chart.php'; ?>
+          <?php include 'includes/chart.php'; ?>
         </div>
       </section>
       <section>
         <p class="title" data-section-title><a id="description" href="#descriptions">Descriptions</a></p>
         <div class="content" data-slug="descriptions" data-section-content data-html="descriptions">
-          <?php include 'descriptions.php'; ?>
+          <?php include 'includes/descriptions.php'; ?>
         </div>
       </section>
       <section>
         <p class="title" data-section-title><a href="#about">About</a></p>
         <div class="content" data-slug="about" data-section-content data-html="about">
-          <?php include 'about.php'; ?>
+          <?php include 'includes/about.php'; ?>
         </div>
       </section>
     </div>

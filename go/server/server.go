@@ -2,12 +2,12 @@ package main
 
 import (
   "fmt"
-  "io/ioutil"
   "html/template"
   "net/http"
   "regexp"
   "errors"
   "gopkg.in/mgo.v2"
+  "gopkg.in/mgo.v2/bson"
   "code.google.com/p/gcfg"
 )
 
@@ -28,21 +28,25 @@ type Config struct {
 
 type Page struct {
   Title string
-  Body  []byte
+  Body  string
 }
 
 func (p *Page) save() error {
-  filename := p.Title + ".txt"
-  return ioutil.WriteFile(filename, p.Body, 0600)
+  session, _ := mgo.Dial("127.0.0.1")
+  collection := session.DB("go_wiki").C("pages")
+  _, err := collection.Upsert(bson.M{"title": p.Title}, p)
+  return err
 }
 
 func loadPage(title string) (*Page, error) {
-  filename := title + ".txt"
-  body, err := ioutil.ReadFile(filename)
+  result := Page{}
+  session, _ := mgo.Dial("127.0.0.1")
+  collection := session.DB("go_wiki").C("pages")
+  err := collection.Find(bson.M{"title": title}).One(&result)
   if err != nil {
     return nil, err
   }
-  return &Page{Title: title, Body: body}, nil
+  return &result, nil
 }
 
 func getTitle(w http.ResponseWriter, r *http.Request) (string, error) {
@@ -80,7 +84,7 @@ func editHandler(w http.ResponseWriter, r *http.Request, title string) {
 
 func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
   body := r.FormValue("body")
-  p := &Page{Title: title, Body: []byte(body)}
+  p := &Page{Title: title, Body: body}
   err := p.save()
   if err != nil {
     http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -105,6 +109,7 @@ func main() {
     fmt.Println(err)
     return
   }
+
   http.HandleFunc("/view/", makeHandler(viewHandler))
   http.HandleFunc("/edit/", makeHandler(editHandler))
   http.HandleFunc("/save/", makeHandler(saveHandler))

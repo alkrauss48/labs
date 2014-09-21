@@ -12,11 +12,12 @@ import (
 )
 
 var templates = template.Must(template.ParseFiles(
-  "templates/edit.html", "templates/view.html"))
+  "templates/edit.html", "templates/view.html", "templates/index.html"))
 
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
 
 var cfg Config
+var collection *mgo.Collection
 
 type Config struct {
   Adapter struct {
@@ -32,16 +33,12 @@ type Page struct {
 }
 
 func (p *Page) save() error {
-  session, _ := mgo.Dial("127.0.0.1")
-  collection := session.DB("go_wiki").C("pages")
   _, err := collection.Upsert(bson.M{"title": p.Title}, p)
   return err
 }
 
 func loadPage(title string) (*Page, error) {
   result := Page{}
-  session, _ := mgo.Dial("127.0.0.1")
-  collection := session.DB("go_wiki").C("pages")
   err := collection.Find(bson.M{"title": title}).One(&result)
   if err != nil {
     return nil, err
@@ -92,6 +89,15 @@ func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
   http.Redirect(w, r, "/view/"+title, http.StatusFound)
 }
 
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+  var result []Page
+  collection.Find(nil).All(&result)
+  err := templates.ExecuteTemplate(w, "index.html", result)
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+  }
+}
+
 func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.HandlerFunc {
   return func(w http.ResponseWriter, r *http.Request) {
     m := validPath.FindStringSubmatch(r.URL.Path)
@@ -109,9 +115,12 @@ func main() {
     fmt.Println(err)
     return
   }
+  session, _ := mgo.Dial(cfg.Adapter.Server)
+  collection = session.DB(cfg.Adapter.Database).C(cfg.Adapter.Collection)
 
   http.HandleFunc("/view/", makeHandler(viewHandler))
   http.HandleFunc("/edit/", makeHandler(editHandler))
   http.HandleFunc("/save/", makeHandler(saveHandler))
+  http.HandleFunc("/", indexHandler)
   http.ListenAndServe(":8080", nil)
 }

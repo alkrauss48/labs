@@ -16,7 +16,6 @@ var templates = template.Must(template.ParseFiles(
 
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
 
-var cfg Config
 var collection *mgo.Collection
 
 type Config struct {
@@ -109,14 +108,19 @@ func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.Hand
   }
 }
 
+func establishConnections(cfg Config){
+  session, _ := mgo.Dial(cfg.Adapter.Server)
+  collection = session.DB(cfg.Adapter.Database).C(cfg.Adapter.Collection)
+}
+
 func main() {
+  var cfg Config
   err := gcfg.ReadFileInto(&cfg, "config/config.gcfg")
   if err != nil {
     fmt.Println(err)
     return
   }
-  session, _ := mgo.Dial(cfg.Adapter.Server)
-  collection = session.DB(cfg.Adapter.Database).C(cfg.Adapter.Collection)
+  establishConnections(cfg)
 
   http.HandleFunc("/view/", makeHandler(viewHandler))
   http.HandleFunc("/edit/", makeHandler(editHandler))

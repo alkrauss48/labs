@@ -4,3 +4,16 @@
 {{range .}}
 <p>[<a href="/view/{{.Title}}">{{.Title}}</a>]</p>
 {{end}}
+
+<h4>Add New</h4>
+<form id="newWiki" accept-charset="utf-8">
+  <input type="text" placeholder="Title" id="title" value="" />
+  <input type="submit" id="" value="Create" />
+</form>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $('#newWiki').submit(function(event){
+    $(this).attr('action', location.origin + "/edit/" + $('#title').val());
+  });
+</script>

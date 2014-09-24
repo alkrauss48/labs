@@ -2,20 +2,12 @@ package main
 
 import (
   "fmt"
-  "html/template"
   "net/http"
-  "regexp"
   "gopkg.in/mgo.v2"
   "gopkg.in/mgo.v2/bson"
   "code.google.com/p/gcfg"
+  "./modules/globals"
 )
-
-var templates = template.Must(template.ParseFiles(
-  "templates/edit.html", "templates/view.html", "templates/index.html"))
-
-var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
-
-var collection *mgo.Collection
 
 type Config struct {
   Adapter struct {
@@ -33,13 +25,13 @@ type Page struct {
 }
 
 func (p *Page) save() error {
-  _, err := collection.Upsert(bson.M{"title": p.Title}, p)
+  _, err := globals.Collection.Upsert(bson.M{"title": p.Title}, p)
   return err
 }
 
 func loadPage(title string) (*Page, error) {
   result := Page{}
-  err := collection.Find(bson.M{"title": title}).One(&result)
+  err := globals.Collection.Find(bson.M{"title": title}).One(&result)
   if err != nil {
     return nil, err
   }
@@ -47,7 +39,7 @@ func loadPage(title string) (*Page, error) {
 }
 
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
-  err := templates.ExecuteTemplate(w, tmpl+".html", p)
+  err := globals.Templates.ExecuteTemplate(w, tmpl+".html", p)
   if err != nil {
     http.Error(w, err.Error(), http.StatusInternalServerError)
   }
@@ -82,8 +74,8 @@ func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
   var result []Page
-  collection.Find(nil).All(&result)
-  err := templates.ExecuteTemplate(w, "index.html", result)
+  globals.Collection.Find(nil).All(&result)
+  err := globals.Templates.ExecuteTemplate(w, "index.html", result)
   if err != nil {
     http.Error(w, err.Error(), http.StatusInternalServerError)
   }
@@ -91,7 +83,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 
 func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.HandlerFunc {
   return func(w http.ResponseWriter, r *http.Request) {
-    m := validPath.FindStringSubmatch(r.URL.Path)
+    m := globals.ValidPath.FindStringSubmatch(r.URL.Path)
     if m == nil {
       http.NotFound(w, r)
       return
@@ -107,7 +99,7 @@ func establishConnections(cfg Config){
     cfg.Adapter.Password + "@" +
     cfg.Adapter.Server + "/" +
     cfg.Adapter.Database)
-  collection = session.DB("").C(cfg.Adapter.Collection)
+  globals.Collection = session.DB("").C(cfg.Adapter.Collection)
 }
 
 func main() {

@@ -5,7 +5,6 @@ import (
   "html/template"
   "net/http"
   "regexp"
-  "errors"
   "gopkg.in/mgo.v2"
   "gopkg.in/mgo.v2/bson"
   "code.google.com/p/gcfg"
@@ -21,6 +20,8 @@ var collection *mgo.Collection
 type Config struct {
   Adapter struct {
     Server string
+    Username string
+    Password string
     Database string
     Collection string
   }
@@ -45,15 +46,6 @@ func loadPage(title string) (*Page, error) {
   return &result, nil
 }
 
-func getTitle(w http.ResponseWriter, r *http.Request) (string, error) {
-  m := validPath.FindStringSubmatch(r.URL.Path)
-  if m == nil {
-      http.NotFound(w, r)
-      return "", errors.New("Invalid Page Title")
-  }
-  return m[2], nil // The title is the second subexpression.
-}
-
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
   err := templates.ExecuteTemplate(w, tmpl+".html", p)
   if err != nil {
@@ -73,7 +65,7 @@ func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
 func editHandler(w http.ResponseWriter, r *http.Request, title string) {
   p, err := loadPage(title)
   if err != nil {
-      p = &Page{Title: title}
+    p = &Page{Title: title}
   }
   renderTemplate(w, "edit", p)
 }
@@ -109,8 +101,13 @@ func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.Hand
 }
 
 func establishConnections(cfg Config){
-  session, _ := mgo.Dial(cfg.Adapter.Server)
-  collection = session.DB(cfg.Adapter.Database).C(cfg.Adapter.Collection)
+  session, _ := mgo.Dial(
+    "mongodb://" +
+    cfg.Adapter.Username + ":" +
+    cfg.Adapter.Password + "@" +
+    cfg.Adapter.Server + "/" +
+    cfg.Adapter.Database)
+  collection = session.DB("").C(cfg.Adapter.Collection)
 }
 
 func main() {

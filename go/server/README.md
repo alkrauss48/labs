@@ -1,7 +1,7 @@
 # Go Web App Server
 
-A basic http server written in Go which functions as a wiki. You can read,
-create, update, and delete wiki entries at will.
+An http server written in Go which functions as a wiki. This app is fully
+RESTful, so you can read, create, update, and delete wiki entries at will.
 
 Data is persistant through a configurable MongoDB collection.
 
@@ -19,7 +19,7 @@ go build server.go
 ## Config
 
 Go has a package which allows you to read config files in a similar format to
-INI files. In this config, you must define 5 settings:
+INI files. In the main config file, you must define 5 settings:
 
 * Server
 * Username
@@ -27,10 +27,11 @@ INI files. In this config, you must define 5 settings:
 * Database
 * Collection (MongoDB's name for a 'Table', if you're used to SQL)
 
-By default, we require authentication via a username and password to connect to
+By default, authentication is required via a username and password to connect to
 the database.
 
 ## See it in action
-To give it a test drive, give my dev wiki a shot which uses the code here:
+To give it a test drive, give my dev wiki a shot which uses the code in this
+repo:
 
 http://wiki.thesocietea.org

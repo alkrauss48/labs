@@ -14,6 +14,11 @@ func (p *Page) Save() error {
   return err
 }
 
+func (p *Page) Delete() error {
+  err := globals.Collection.Remove(bson.M{"title": p.Title})
+  return err
+}
+
 func LoadPage(title string) (*Page, error) {
   result := Page{}
   err := globals.Collection.Find(bson.M{"title": title}).One(&result)

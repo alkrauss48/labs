@@ -1,8 +1,11 @@
 <h1>GoLang Wiki!</h1>
+<p>The backend of this server is written entirely in Go &amp; persisted through
+MongoDB. <a href="https://github.com/alkrauss48/labs/tree/master/go/server">See the code</a></p>
 
-<h4>Topics</h4>
+<h4>Entries</h4>
 {{range .}}
-<p>[<a href="/view/{{.Title}}">{{.Title}}</a>]</p>
+<p>[<a href="/view/{{.Title}}">{{.Title}}</a>] - <a
+  href="/delete/{{.Title}}">Delete</a></p>
 {{end}}
 
 <h4>Add New</h4>

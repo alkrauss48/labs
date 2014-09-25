@@ -34,6 +34,19 @@ func SaveHandler(w http.ResponseWriter, r *http.Request, title string) {
   http.Redirect(w, r, "/view/"+title, http.StatusFound)
 }
 
+func DeleteHandler(w http.ResponseWriter, r *http.Request, title string) {
+  p, err := page.LoadPage(title)
+  if err != nil {
+    http.Redirect(w, r, "/view/"+title, http.StatusFound)
+    return
+  }
+  err = p.Delete()
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+  }
+  http.Redirect(w, r, "/", http.StatusFound)
+}
+
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
   var result []page.Page
   globals.Collection.Find(nil).All(&result)

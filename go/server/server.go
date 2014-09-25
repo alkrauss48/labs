@@ -3,18 +3,11 @@ package main
 import (
   "fmt"
   "net/http"
-  "gopkg.in/mgo.v2"
   "code.google.com/p/gcfg"
   "./modules/globals"
+  "./modules/helpers"
   "./modules/page"
 )
-
-func renderTemplate(w http.ResponseWriter, tmpl string, p *page.Page) {
-  err := globals.Templates.ExecuteTemplate(w, tmpl+".html", p)
-  if err != nil {
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-  }
-}
 
 func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
   p, err := page.LoadPage(title)
@@ -22,7 +15,7 @@ func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
     http.Redirect(w, r, "/edit/"+title, http.StatusFound)
     return
   }
-  renderTemplate(w, "view", p)
+  helpers.RenderTemplate(w, "view", p)
 }
 
 func editHandler(w http.ResponseWriter, r *http.Request, title string) {
@@ -30,7 +23,7 @@ func editHandler(w http.ResponseWriter, r *http.Request, title string) {
   if err != nil {
     p = &page.Page{Title: title}
   }
-  renderTemplate(w, "edit", p)
+  helpers.RenderTemplate(w, "edit", p)
 }
 
 func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
@@ -63,23 +56,14 @@ func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.Hand
   }
 }
 
-func establishConnections(){
-  session, _ := mgo.Dial(
-    "mongodb://" +
-    globals.Cfg.Adapter.Username + ":" +
-    globals.Cfg.Adapter.Password + "@" +
-    globals.Cfg.Adapter.Server + "/" +
-    globals.Cfg.Adapter.Database)
-  globals.Collection = session.DB("").C(globals.Cfg.Adapter.Collection)
-}
-
 func main() {
   err := gcfg.ReadFileInto(&globals.Cfg, "config/config.gcfg")
   if err != nil {
     fmt.Println(err)
     return
   }
-  establishConnections()
+
+  helpers.EstablishConnections()
 
   // Run all the handlers in their own thread
   go http.HandleFunc("/view/", makeHandler(viewHandler))

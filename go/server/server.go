@@ -111,9 +111,10 @@ func main() {
   }
   establishConnections(cfg)
 
-  http.HandleFunc("/view/", makeHandler(viewHandler))
-  http.HandleFunc("/edit/", makeHandler(editHandler))
-  http.HandleFunc("/save/", makeHandler(saveHandler))
-  http.HandleFunc("/", indexHandler)
+  // Run all the handlers in their own thread
+  go http.HandleFunc("/view/", makeHandler(viewHandler))
+  go http.HandleFunc("/edit/", makeHandler(editHandler))
+  go http.HandleFunc("/save/", makeHandler(saveHandler))
+  go http.HandleFunc("/", indexHandler)
   http.ListenAndServe(":8080", nil)
 }

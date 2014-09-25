@@ -12,9 +12,40 @@ privileges to the DB.
 Then do:
 ```shell
 cp config/config.gcfg.example config/config.gcfg # And add your credentials
-go build server.go
-./server
+go build app.go
+./go
 ```
+
+### Running Locally for Development
+To run the app locally:
+```bash
+go run ./app.go
+```
+
+### Running as a Daemon
+A Makefile has been set up with basic tasks related to running the app as a
+daemon. To set the daemon up:
+```bash
+make start
+```
+
+To see all running background processes related to the daemon:
+```bash
+make list
+```
+
+To kill all daemon-related processes:
+```bash
+make stop
+```
+
+### Initializing App at Boot
+To automatically start the app at boot, edit your crontab file (`crontab -e`)
+and add:
+```bash
+@reboot cd project-dir && make start # change project-dir to a real dir
+```
+
 
 ## Config
 

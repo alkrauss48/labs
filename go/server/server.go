@@ -4,41 +4,12 @@ import (
   "fmt"
   "net/http"
   "gopkg.in/mgo.v2"
-  "gopkg.in/mgo.v2/bson"
   "code.google.com/p/gcfg"
   "./modules/globals"
+  "./modules/page"
 )
 
-type Config struct {
-  Adapter struct {
-    Server string
-    Username string
-    Password string
-    Database string
-    Collection string
-  }
-}
-
-type Page struct {
-  Title string
-  Body  string
-}
-
-func (p *Page) save() error {
-  _, err := globals.Collection.Upsert(bson.M{"title": p.Title}, p)
-  return err
-}
-
-func loadPage(title string) (*Page, error) {
-  result := Page{}
-  err := globals.Collection.Find(bson.M{"title": title}).One(&result)
-  if err != nil {
-    return nil, err
-  }
-  return &result, nil
-}
-
-func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
+func renderTemplate(w http.ResponseWriter, tmpl string, p *page.Page) {
   err := globals.Templates.ExecuteTemplate(w, tmpl+".html", p)
   if err != nil {
     http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -46,7 +17,7 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 }
 
 func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
-  p, err := loadPage(title)
+  p, err := page.LoadPage(title)
   if err != nil {
     http.Redirect(w, r, "/edit/"+title, http.StatusFound)
     return
@@ -55,17 +26,17 @@ func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
 }
 
 func editHandler(w http.ResponseWriter, r *http.Request, title string) {
-  p, err := loadPage(title)
+  p, err := page.LoadPage(title)
   if err != nil {
-    p = &Page{Title: title}
+    p = &page.Page{Title: title}
   }
   renderTemplate(w, "edit", p)
 }
 
 func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
   body := r.FormValue("body")
-  p := &Page{Title: title, Body: body}
-  err := p.save()
+  p := &page.Page{Title: title, Body: body}
+  err := p.Save()
   if err != nil {
     http.Error(w, err.Error(), http.StatusInternalServerError)
   }
@@ -73,7 +44,7 @@ func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-  var result []Page
+  var result []page.Page
   globals.Collection.Find(nil).All(&result)
   err := globals.Templates.ExecuteTemplate(w, "index.html", result)
   if err != nil {
@@ -92,24 +63,23 @@ func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.Hand
   }
 }
 
-func establishConnections(cfg Config){
+func establishConnections(){
   session, _ := mgo.Dial(
     "mongodb://" +
-    cfg.Adapter.Username + ":" +
-    cfg.Adapter.Password + "@" +
-    cfg.Adapter.Server + "/" +
-    cfg.Adapter.Database)
-  globals.Collection = session.DB("").C(cfg.Adapter.Collection)
+    globals.Cfg.Adapter.Username + ":" +
+    globals.Cfg.Adapter.Password + "@" +
+    globals.Cfg.Adapter.Server + "/" +
+    globals.Cfg.Adapter.Database)
+  globals.Collection = session.DB("").C(globals.Cfg.Adapter.Collection)
 }
 
 func main() {
-  var cfg Config
-  err := gcfg.ReadFileInto(&cfg, "config/config.gcfg")
+  err := gcfg.ReadFileInto(&globals.Cfg, "config/config.gcfg")
   if err != nil {
     fmt.Println(err)
     return
   }
-  establishConnections(cfg)
+  establishConnections()
 
   // Run all the handlers in their own thread
   go http.HandleFunc("/view/", makeHandler(viewHandler))

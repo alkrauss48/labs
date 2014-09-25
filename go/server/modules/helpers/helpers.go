@@ -7,7 +7,7 @@ import(
   "gopkg.in/mgo.v2"
 )
 
-func EstablishConnections(){
+func EstablishConnection(){
   session, _ := mgo.Dial(
     "mongodb://" +
     globals.Cfg.Adapter.Username + ":" +
@@ -24,3 +24,13 @@ func RenderTemplate(w http.ResponseWriter, tmpl string, p *page.Page) {
   }
 }
 
+func MakeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.HandlerFunc {
+  return func(w http.ResponseWriter, r *http.Request) {
+    m := globals.ValidPath.FindStringSubmatch(r.URL.Path)
+    if m == nil {
+      http.NotFound(w, r)
+      return
+    }
+   fn(w, r, m[2])
+  }
+}

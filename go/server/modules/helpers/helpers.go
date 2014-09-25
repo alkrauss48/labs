@@ -4,9 +4,16 @@ import(
   "../globals"
   "../page"
   "net/http"
+  "code.google.com/p/gcfg"
   "gopkg.in/mgo.v2"
 )
 
+func ReadConfig(){
+  err := gcfg.ReadFileInto(&globals.Cfg, "config/config.gcfg")
+  if err != nil {
+    panic(err)
+  }
+}
 func EstablishConnection(){
   session, _ := mgo.Dial(
     "mongodb://" +

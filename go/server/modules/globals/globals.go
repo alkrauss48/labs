@@ -23,6 +23,6 @@ var Templates = template.Must(template.ParseFiles(
   "templates/view.html",
   "templates/index.html"))
 
-var ValidPath = regexp.MustCompile("^/(edit|save|view|delete)/([a-zA-Z0-9]+)$")
+var ValidPath = regexp.MustCompile("^/(edit|save|view|delete)/(.+)$")
 
 var Collection *mgo.Collection

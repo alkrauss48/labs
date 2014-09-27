@@ -11,38 +11,43 @@ privileges to the DB.
 
 Then do:
 ```shell
-cp config/config.gcfg.example config/config.gcfg # And add your credentials
-go build app.go
-./go
+make install
+./app
+```
+
+Other helpful `make` commands include:
+```shell
+make clean    # cleans executable files from the dir
+make build    # cleans and builds new executable
 ```
 
 ### Running Locally for Development
 To run the app locally:
-```bash
-go run ./app.go
+```shell
+go run ./app.go # or just ./app, if the executable is built
 ```
 
 ### Running as a Daemon
 A Makefile has been set up with basic tasks related to running the app as a
 daemon. To set the daemon up:
-```bash
+```shell
 make start
 ```
 
 To see all running background processes related to the daemon:
-```bash
+```shell
 make list
 ```
 
 To kill all daemon-related processes:
-```bash
+```shell
 make stop
 ```
 
 ### Initializing App at Boot
 To automatically start the app at boot, edit your crontab file (`crontab -e`)
 and add:
-```bash
+```shell
 @reboot cd project-dir && make start # change project-dir to a real dir
 ```
 

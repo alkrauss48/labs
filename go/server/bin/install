@@ -1,3 +1,0 @@
-go get gopkg.in/mgo.v2 code.google.com/p/gcfg
-go clean && go build app.go
-

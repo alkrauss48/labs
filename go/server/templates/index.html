@@ -4,7 +4,7 @@ MongoDB. <a href="https://github.com/alkrauss48/labs/tree/master/go/server">See 
 
 <h4>Entries</h4>
 {{range .}}
-<p>[<a href="/view/{{.Title}}">{{.Title}}</a>] - <a
+<p class="entry">[<a href="/view/{{.Title}}">{{.Title}}</a>] - <a
   href="/delete/{{.Title}}">Delete</a></p>
 {{end}}
 
@@ -13,9 +13,16 @@ MongoDB. <a href="https://github.com/alkrauss48/labs/tree/master/go/server">See 
   <input type="text" placeholder="Title" id="title" value="" />
   <input type="submit" id="" value="Create" />
 </form>
+<p style="display: none;" class="too-many">
+  Too many entries - please delete some before you can add more.
+</p>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" charset="utf-8">
+  if($('.entry').length > 20){
+    $('#newWiki').hide();
+    $('.too-many').show();
+  }
   $('#newWiki').submit(function(event){
     $(this).attr('action', location.origin + "/edit/" + $('#title').val());
   });

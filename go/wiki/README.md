@@ -1,4 +1,4 @@
-# Go Web App Server
+# Go Wiki
 
 An http server written in Go which functions as a wiki. This app is fully
 RESTful, so you can read, create, update, and delete wiki entries at will.

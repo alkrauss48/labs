@@ -12,6 +12,7 @@ privileges to the DB.
 Then do:
 ```shell
 make install
+# Update config/config.gcfg to reflect your DB settings (See below)
 ./app
 ```
 
@@ -67,7 +68,6 @@ By default, authentication is required via a username and password to connect to
 the database.
 
 ## See it in action
-To give it a test drive, give my dev wiki a shot which uses the code in this
-repo:
+To give it a test drive, see my dev wiki which uses the code in this repo:
 
 http://wiki.thesocietea.org

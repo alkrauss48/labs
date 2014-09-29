@@ -8,6 +8,7 @@
   <li><a href="tea-timer">Tea Timer</a></li>
   <li><a href="tea-chart">Tea Steep Chart</a></li>
   <li><a href="carnegie-chart">Dale Carnegie Practice Chart</a></li>
+  <li><a href="http://wiki.thesocietea.org">Go Wiki</a></li>
 </ul>
 
 <?php include 'analytics.php'; ?>

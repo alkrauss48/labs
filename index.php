@@ -166,7 +166,7 @@
             </div>
           </div>
           <ul class="actions">
-            <li><a href="https://github.com/alkrauss48/labs" class="button icon fa-file">Check out the GitHub
+            <li><a href="https://github.com/alkrauss48/labs" class="button icon fa-arrow-right">Check out the GitHub
               Repo</a></li>
           </ul>
         </section>

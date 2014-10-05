@@ -30,7 +30,7 @@
         <div id="header" class="container">
 
           <!-- Logo -->
-            <h1 id="logo"><a href="index.html">My Labs</a></h1>
+            <h1 id="logo">My Labs</h1>
             <p>A repository of fun projects by Aaron Krauss</p>
 
           <!-- Nav -->

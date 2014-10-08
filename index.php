@@ -109,9 +109,12 @@
                   <header>
                     <h3>OpenStates API Demo</h3>
                   </header>
-                  <p>By using the <a target="_blank" href="http://openstates.org/">OpenStates API</a>
-                  in combination with Yahoo's geolocation API and <strong>async.js</strong>, we can
-                  load our state legislators and avoid callback hell!</p>
+                  <p>
+                    By using the <a target="_blank" href="http://openstates.org/">OpenStates API</a>
+                    in combination with Yahoo's geolocation API and <strong>async.js</strong>, we can
+                    load our state legislators and avoid callback hell! Error messages with
+                    <a href="https://github.com/t4t5/sweetalert" target="_blank">SweetAlert</a> too.
+                  </p>
                 </section>
             </div>
             <div class="4u">

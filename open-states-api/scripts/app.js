@@ -42,7 +42,7 @@ function getLegislatorInfo(latitude, longitude, callback){
         $('.tweet-legislators').append('<div id="' + rep.id + '"></div>');
         $('#' + rep.id).append(
           // '<a target="twitter" href="https://twitter.com/intent/tweet?text=I found you with the OpenStates API!">' + rep.full_name + '</a>'
-          '<a>' + rep.full_name + '</a>'
+          '<a href="mailto:' + rep.email + '">' + rep.full_name + '</a>'
           );
         console.log(data);
       }
@@ -51,10 +51,10 @@ function getLegislatorInfo(latitude, longitude, callback){
 }
 
 $(document).ready( function() {
-  if(localStorage.getItem('coordinates')){
-    coords = JSON.parse(localStorage.getItem('coordinates'));
-    getLegislatorInfo(coords.latitude, coords.longitude, null);
-  }
+  // if(localStorage.getItem('coordinates')){
+  //   coords = JSON.parse(localStorage.getItem('coordinates'));
+  //   getLegislatorInfo(coords.latitude, coords.longitude, null);
+  // }
 
   $('form.petition').on('submit', function(event){
     event.preventDefault();
@@ -64,7 +64,11 @@ $(document).ready( function() {
       getLegislatorInfo
     ],
     function(err, result){
-      alert(err);
+      swal({
+        title: "Oops!",
+        text: err,
+        type: "error"
+      });
     });
   });
 });

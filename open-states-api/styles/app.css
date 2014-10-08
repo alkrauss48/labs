@@ -1,0 +1,9 @@
+section {
+  padding-top: 2em;
+}
+
+#main {
+  max-width: 58em;
+  margin-left: auto;
+  margin-right: auto;
+}

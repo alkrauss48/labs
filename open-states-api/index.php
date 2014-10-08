@@ -12,25 +12,28 @@
     <base href="/open-states-api/" target="" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/sweet-alert.css">
+    <link rel="stylesheet" href="styles/app.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/async/0.9.0/async.js"></script>
+    <script src="scripts/sweet-alert.min.js"></script>
     <script src="scripts/app.js"></script>
   </head>
   <body>
-    <div role="main" class="row">
-      <section style="padding-top: 2em;" class="col-md-10 col-sm-offset-2">
+    <div id="main" role="main" class="row">
+      <section class="col-md-12">
         <h1>OpenStates API Demo</h1>
         <h4>Find Your State Legislators by Zip Code</h4>
         <form class="petition" action="" method="get" accept-charset="utf-8">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" name="name" placeholder="Name" id="name" value="" />
+            <input class="form-control" type="text" name="name" placeholder="Name" id="name" value="" />
           </div>
           <div class="form-group">
             <label for="zip">Zip Code:</label>
-            <input type="text" name="zip" placeholder="Zip Code" id="zip" value="" />
+            <input class="form-control" type="text" name="zip" placeholder="Zip Code" id="zip" value="" />
           </div>
-          <input class="btn btn-primary" type="submit" name="" id="" value="Submit" />
+          <input class="btn btn-info" type="submit" name="" id="" value="Submit" />
         </form>
         <h4>Your State Legislators:</h4>
         <div class="tweet-legislators">

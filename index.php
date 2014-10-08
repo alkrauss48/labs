@@ -102,19 +102,17 @@
 
             </div>
             <div class="4u">
-
               <!-- Feature -->
                 <section>
-                  <a href="tea-timer" class="image featured"><img
-                    src="images/tea_timer_th.jpg" alt="" /></a>
+                  <a target="_blank" href="/open-states-api" class="image featured"><img
+                    src="images/openstates_th.jpg" alt="" /></a>
                   <header>
-                    <h3>Tea Timers</h3>
+                    <h3>OpenStates API Demo</h3>
                   </header>
-                  <p>I love <strong>Tea</strong>, so I thought I would build
-                  some tea timers to complement my tea chart and help any other
-                  tea enthusiasts with preparing loose-leaf tea.</p>
+                  <p>By using the <a href="http://openstates.org/">OpenStates API</a>
+                  in combination with Yahoo's geolocation API and <strong>async.js</strong>, we can
+                  load our state legislators and avoid callback hell!</p>
                 </section>
-
             </div>
             <div class="4u">
 
@@ -161,6 +159,21 @@
                   <p>My first real <strong>Go</strong> project! Go Wiki is a
                   fully functioning wiki server built in Go that is tied to a <strong>MongoDB</strong>
                   collection to persist data.</p>
+                </section>
+
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="tea-timer" class="image featured"><img
+                    src="images/tea_timer_th.jpg" alt="" /></a>
+                  <header>
+                    <h3>Tea Timers</h3>
+                  </header>
+                  <p>I love <strong>Tea</strong>, so I thought I would build
+                  some tea timers to complement my tea chart and help any other
+                  tea enthusiasts with preparing loose-leaf tea.</p>
                 </section>
 
             </div>

@@ -18,7 +18,7 @@
   </head>
   <body>
     <div role="main" class="row">
-      <section style="padding-top: 2em;" class="col-md-12 col-sm-offset-2">
+      <section style="padding-top: 2em;" class="col-md-10 col-sm-offset-2">
         <h1>OpenStates API Demo</h1>
         <h4>Find Your State Legislators by Zip Code</h4>
         <form class="petition" action="" method="get" accept-charset="utf-8">

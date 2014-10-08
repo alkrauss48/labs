@@ -104,12 +104,12 @@
             <div class="4u">
               <!-- Feature -->
                 <section>
-                  <a target="_blank" href="/open-states-api" class="image featured"><img
+                  <a href="/open-states-api" class="image featured"><img
                     src="images/openstates_th.jpg" alt="" /></a>
                   <header>
                     <h3>OpenStates API Demo</h3>
                   </header>
-                  <p>By using the <a href="http://openstates.org/">OpenStates API</a>
+                  <p>By using the <a target="_blank" href="http://openstates.org/">OpenStates API</a>
                   in combination with Yahoo's geolocation API and <strong>async.js</strong>, we can
                   load our state legislators and avoid callback hell!</p>
                 </section>

@@ -1,5 +1,7 @@
+{{ template "header" . }}
 <h1>{{.Title}}</h1>
 
 <p>[<a href="/">Back</a>] [<a href="/edit/{{.Title}}">Edit</a>]</p>
 
 <pre>{{printf "%s" .Body}}</pre>
+{{ template "footer" . }}

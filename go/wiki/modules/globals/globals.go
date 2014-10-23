@@ -21,7 +21,9 @@ var Cfg Config
 var Templates = template.Must(template.ParseFiles(
   "templates/edit.html",
   "templates/view.html",
-  "templates/index.html"))
+  "templates/index.html",
+  "templates/partials/_header.html",
+  "templates/partials/_footer.html"))
 
 var ValidPath = regexp.MustCompile("^/(edit|save|view|delete)/(.+)$")
 

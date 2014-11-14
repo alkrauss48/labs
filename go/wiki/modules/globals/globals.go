@@ -1,29 +1,29 @@
 package globals
 
-import(
-  "html/template"
-  "regexp"
-  "gopkg.in/mgo.v2"
+import (
+	"gopkg.in/mgo.v2"
+	"html/template"
+	"regexp"
 )
 
 type Config struct {
-  Adapter struct {
-    Server string
-    Username string
-    Password string
-    Database string
-    Collection string
-  }
+	Adapter struct {
+		Server     string
+		Username   string
+		Password   string
+		Database   string
+		Collection string
+	}
 }
 
 var Cfg Config
 
 var Templates = template.Must(template.ParseFiles(
-  "templates/edit.html",
-  "templates/view.html",
-  "templates/index.html",
-  "templates/partials/_header.html",
-  "templates/partials/_footer.html"))
+	"templates/edit.html",
+	"templates/view.html",
+	"templates/index.html",
+	"templates/partials/_header.html",
+	"templates/partials/_footer.html"))
 
 var ValidPath = regexp.MustCompile("^/(edit|save|view|delete)/(.+)$")
 

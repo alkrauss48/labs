@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimal-ui">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="A 30-day chart to help you practice the principles discussed in Dale Carnegie's 'How to Win Friends and Influence People.' By Aaron Krauss">
+  <meta name="description" content="A 30-day chart to help you practice the principles discussed in Dale Carnegie's 'How to Win Friends and Influence People.'">
   <meta property="og:image" content="http://thesocietea.org/assets/images/dist/aaronkrauss.png">
 
   <base href="/carnegie-chart/" target="" />

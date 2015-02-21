@@ -71,7 +71,7 @@
     <p>
       Hi, I'm Aaron. Want to add something to this chart? Feel free to shoot me an email with your suggestions at
       <a href="mailto:alkrauss48@gmail.com">alkrauss48@gmail.com</a>. Or, if you want to hack on to the site
-      itself, checkout the <a href="https://github.com/alkrauss48/carnegie_chart" target="blank">GitHub repo</a> and make a pull request.
+      itself, checkout the <a href="https://github.com/alkrauss48/labs/tree/master/carnegie-chart" target="_blank">GitHub repo</a> and make a pull request.
     </p>
   </div>
 </div>

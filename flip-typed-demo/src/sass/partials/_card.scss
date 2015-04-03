@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  @include transition(transform .3s);
+}
+
+h1 {
+  font-size: 10em;
+}
+
+figure {
+  margin: 0;
+}
+.container { 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 100%;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  @include transform-style(preserve-3d);
+  @include transition(transform .5s);
+  @include scale(1);
+}
+
+#card figure {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+#card .front {
+  background: #007DC3;
+  text-align: center;
+  color: white;
+}
+#card .back {
+  background: #F05133;
+  @include rotateY(180deg);
+  padding: 2em;
+  color: white;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+
+#card.flipped {
+  @include rotateY(180deg);
+}
+
+.scale-out {
+  @include scale(.9);
+}
+
+.typed-cursor { display: none; }
+
+.flip-button {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  box-sizing: border-box;
+}
+
+.flip-me {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 1em 2em;
+  color: white;
+}
+
+figure.back p:first-child {
+  padding-top: 2em;
+}
+
+form {
+  color: black;
+}

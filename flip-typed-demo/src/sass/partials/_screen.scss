@@ -1,0 +1,15 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ */
+
+
+/* Start SUSY Grid */
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 2/3, // The size of a gutter in relation to a single column
+  column-width: 3em,
+  use-custom: (
+    clearfix: true
+  )
+);
+/* End SUSY Grid */

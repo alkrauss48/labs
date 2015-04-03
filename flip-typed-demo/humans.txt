@@ -1,0 +1,19 @@
+# humanstxt.org/
+
+/* TEAM */
+Your title:   Staplegun
+Site:         http://staplegun.us/
+Github:       https://github.com/Staplegun-US
+Twitter:      @staplegun_us
+Location:     Oklahoma City, OK, US
+
+
+/* THANKS */
+Name:         Staplegun Interactive Team - (Jack, Koty, Darren, Brandon, Aaron)
+
+
+/* SITE */
+Last update:  YYYY/MM/DD
+Standards:    HTML5, CSS3, JS
+Components:   Compass, Susy, Normalize, Modernizr, jQuery, Underscore
+Dev Tools:    SASS, Grunt, Browserify, Ruby Gems, Bower, NPM

@@ -181,6 +181,22 @@
 
             </div>
           </div>
+          <div class="row">
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="flip-typed-demo" class="image featured"><img
+                    src="images/flip-typed-demo.jpg" alt="" /></a>
+                  <header>
+                    <h3>Flip + Typed.js Demo</h3>
+                  </header>
+                  <p>This is a fun, small little demo which uses pure CSS to <strong>flip a page</strong> over,
+                    and then render text using <a target="_blank" href="http://www.mattboldt.com/demos/typed-js/">Typed.js</a></p>
+                </section>
+
+            </div>
+          </div>
           <ul class="actions">
             <li><a href="https://github.com/alkrauss48/labs" class="button icon fa-arrow-right">Check out the GitHub
               Repo</a></li>

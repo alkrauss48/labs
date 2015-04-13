@@ -48,7 +48,7 @@
     </div>
   </div>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation.min.js"></script>
   <script src="scripts/chart.js"></script>
   <?php include '../analytics.php'; ?>
 </body>

@@ -254,7 +254,7 @@
       with friends or coworkers about things that are going on in
       their lives. Do your best to understand your colleagues'
       struggles and to show that you are interested in them. Don't worry about how to
-      respond, just let them do the talking and be good, attentive listener. Ask questions, show them you care. Then,
+      respond, just let them do the talking and be a good, attentive listener. Ask questions, show them you care. Then,
       once you have enhanced your connection with them, you
       can start to bring up your own ideas. Maybe you have some thoughts on how to improve the company, or employee happiness,
       or maybe you just want someone to hear out your ideas too.</p>
@@ -395,7 +395,7 @@
       and you might even gain some more respect in the process if you do it with sincerity.</p>
       <p class="center">Many of these skills involve you finding opportunities to
       praise your colleagues, and therefore aren't difficult to practice. However, similarly to weeks 3 and 4,
-      other skills may be more difficult to practice since they situational, such as finding a fault
+      other skills may be more difficult to practice since they're situational, such as finding a fault
       in someone that you wish to correct. Don't go out of your way to find faults, but if you do
       find an opportunity where these situations arise, then practice these skills!
       </p>

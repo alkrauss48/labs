@@ -21,10 +21,11 @@
   <div class="row">
     <div class="large-12 columns">
       <h1 class="center">Carnegie 30-Day Chart</h1>
-      <h4 class="center italic">The Guide to Practicing
+      <h4 class="center">By <a href="https://thesocietea.org" target="blank">Aaron Krauss</a></h4>
+      <p class="center italic">The Guide to Practicing
         <span class="underline">
           <a target="blank" href="http://www.amazon.com/How-Win-Friends-Influence-People/dp/0671723650">
-            How to Win Friends and Influence People</a></span></h4>
+            How to Win Friends and Influence People</a></span></p>
       <div class="section-container auto" data-section data-options="deep_linking: true">
         <section class="active">
           <p class="title" data-section-title><a href="#chart">Chart</a></p>

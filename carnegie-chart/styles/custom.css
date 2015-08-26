@@ -1,8 +1,4 @@
-p.center,
-h1.center,
-h3.center,
-h4.center,
-h6.center {
+.center {
   text-align: center;
 }
 

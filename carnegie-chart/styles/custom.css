@@ -19,6 +19,7 @@ h6.italic {
 
 .day {
   background-color: #eff9fd;
+  border-color: #c8eafa;
 }
 
 table.center {
@@ -35,7 +36,6 @@ div.center {
 
 .panel {
   /* border-radius: 5px; */
-  border-color: #c8eafa;
 }
 
 span.underline {
@@ -55,7 +55,7 @@ body {
 }
 
 div[id^="description"] {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   transition: background 1s ease-in-out;
   -webkit-transition: background 1s ease-in-out; /* Safari */
 }

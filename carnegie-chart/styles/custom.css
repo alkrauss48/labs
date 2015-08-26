@@ -18,15 +18,7 @@ h6.italic {
 }
 
 .day {
-  background: #f8fcfe; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f8fcfe 0%, #eff9fd 40%, #e5f5fb 59%, #c8eafa 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f8fcfe), color-stop(40%,#eff9fd), color-stop(59%,#e5f5fb), color-stop(100%,#c8eafa)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #f8fcfe 0%,#eff9fd 40%,#e5f5fb 59%,#c8eafa 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #f8fcfe 0%,#eff9fd 40%,#e5f5fb 59%,#c8eafa 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #f8fcfe 0%,#eff9fd 40%,#e5f5fb 59%,#c8eafa 100%); /* IE10+ */
-  background: linear-gradient(135deg, #f8fcfe 0%,#eff9fd 40%,#e5f5fb 59%,#c8eafa 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcfe', endColorstr='#c8eafa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  box-shadow: 1px 1px 5px #aaa;
+  background-color: #eff9fd;
 }
 
 table.center {
@@ -42,7 +34,8 @@ div.center {
 }
 
 .panel {
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  border-color: #c8eafa;
 }
 
 span.underline {

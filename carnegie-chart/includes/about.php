@@ -12,7 +12,7 @@
     </p>
     <p>
       At first glance, the title of this book probably gives off a superficial vibe.
-      After all, the thought off explicitly learning how to get better at "winning friends and influencing people"
+      After all, the thought of explicitly learning how to get better at "winning friends and influencing people"
       doesn't sound like like the most humble topic. But I can't tell you
       how humble the true meaning of this book is. Dale Carnegie
       genuinely provides you with the tools to create

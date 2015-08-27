@@ -40,7 +40,7 @@
           </div>
         </section>
         <section>
-          <p class="title" data-section-title><a href="#about">About</a></p>
+          <p class="title" data-section-title><a href="#about">How It Works</a></p>
           <div class="content" data-slug="about" data-section-content data-html="about">
             <?php include 'includes/about.php'; ?>
           </div>

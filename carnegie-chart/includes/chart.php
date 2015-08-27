@@ -57,14 +57,14 @@
 
     <div class="row">
       <hr />
-      <p class="center">Week 1 deals with the fundamental techniques in handling people.
+      <p><b>Week 1</b> deals with the fundamental techniques in handling people.
         In a nutshell, be hesitant to criticize others, but unload on the praise and appreciation.
         Flattery is the enemy of appreciation; make sure you praise people with full sincerity.</p>
-      <p class="center">
+      <p>
         A memorable theme for this week is "I will speak ill of no man… and speak all the good I know of everybody."
         For future weeks, please continue practicing them alongside the other goals for that day.
       </p>
-      <p class="center">These basic skills set the stage for the future weeks' skills, and therefore they can't be underestimated.</p>
+      <p>These basic skills set the stage for the future weeks' skills, and therefore they can't be underestimated.</p>
       <hr />
     </div>
 
@@ -124,11 +124,11 @@
 
     <div class="row">
       <hr />
-      <p class="center">Week 2 takes the basics to another level.</p>
-      <p class="center">This week is geared towards helping you make the most of every social interaction around you.
+      <p><b>Week 2</b> takes the basics to another level.</p>
+      <p>This week is geared towards helping you make the most of every social interaction around you.
       You're not trying to influence anyone or be a leader here, you just want to practice being someone that people want
       to be around.</p>
-      <p class="center">Just take some time to improve on your existing
+      <p>Just take some time to improve on your existing
       relationships with friends, coworkers, and everyone else, solely for the goal of becoming a friendlier, more likeable person.
       Practice these skills diligently. There are some skills down the road that are situational and don't need to be exercised regularly.
       These are not those skills; the skills in week 2 can and should be exercised all day, every day.
@@ -242,14 +242,14 @@
 
     <div class="row">
       <hr />
-      <p class="center">Weeks 3 &amp; 4 revolve around the concept of truly understanding other people's
+      <p><b>Weeks 3 &amp; 4</b> revolve around the concept of truly understanding other people's
       motives and emotions, and building off of that understanding to influence
       them so they will in turn become more accepting about your thoughts and views.
       Your goal is build a foundation of firm respect from other people by showing that you care about
       their thoughts and interests. Building that respect is one of the most
       important concepts throughout this whole program, and once you have started gaining it,
       you can really begin to influence others.
-      <p class="center">To make the most of these couple weeks, you
+      <p>To make the most of these couple weeks, you
       will need to jump out of your comfort zone a bit and initiate conversations
       with friends or coworkers about things that are going on in
       their lives. Do your best to understand your colleagues'
@@ -258,7 +258,7 @@
       once you have enhanced your connection with them, you
       can start to bring up your own ideas. Maybe you have some thoughts on how to improve the company, or employee happiness,
       or maybe you just want someone to hear out your ideas too.</p>
-      <p class="center">Some days will require unique situations in order to practice, such as minor conflict or someone
+      <p>Some days will require unique situations in order to practice, such as minor conflict or someone
       having made a mistake. These days may be tough to practice on, as you certainly don't
       want to promote conflict just to practice handling it, so just do your best if those situations arise
       and keep in mind these skills. Other days will require you to promote your thoughts onto
@@ -373,15 +373,15 @@
     </div>
     <div class="row">
       <hr />
-      <p class="center">Weeks 5 &amp; 6 are the last weeks, and are rooted in trying to
+      <p><b>Weeks 5 &amp; 6</b> are the last weeks, and are rooted in trying to
       improve verbal leadership skills.</p>
-      <p class="center">The buzz word for these couple weeks is <i>feedback</i>.
+      <p>The buzz word for these couple weeks is <i>feedback</i>.
       To be a great leader, you have to give feedback.
       Even if you're not of a "managerial" position, you can still act
       as a leader amongst your coworkers and friends and give them the praise they deserve
       for their accomplishments (dig deep to find those accomplishments; deeds like
       refilling the community coffee pot still deserve appreciation).</p>
-      <p class="center">The problem with most people's feedback
+      <p>The problem with most people's feedback
       though is that it's typically only negative; we forget to praise
       people for their good doings, and only comment on what we don't like.
       These last weeks will focus on giving the right kind of feedback,
@@ -389,11 +389,11 @@
       your praise, because chances are that you're not giving enough of it anyway.
       Make sure that it's 100% sincere and honest though; incessant flattery will most likely grant
       you negative points.<p>
-      <p class="center">Then, once you understand how to properly praise others' accomplishments,
+      <p>Then, once you understand how to properly praise others' accomplishments,
       you can begin to bring up some areas of improvement. Remember, anyone can criticize, and anyone can also
       be hated for it. Utilize your new verbal skills to help others improve their faults,
       and you might even gain some more respect in the process if you do it with sincerity.</p>
-      <p class="center">Many of these skills involve you finding opportunities to
+      <p>Many of these skills involve you finding opportunities to
       praise your colleagues, and therefore aren't difficult to practice. However, similarly to weeks 3 and 4,
       other skills may be more difficult to practice since they're situational, such as finding a fault
       in someone that you wish to correct. Don't go out of your way to find faults, but if you do

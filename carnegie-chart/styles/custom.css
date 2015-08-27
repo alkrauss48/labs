@@ -11,6 +11,12 @@
   padding: 0 2em;
 }
 
+@media screen and (max-width: 768px){
+  .content p {
+    padding: 0 1em;
+  }
+}
+
 h6.right {
   text-align: right;
 }

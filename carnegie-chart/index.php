@@ -7,7 +7,6 @@
   <meta name="description" content="A 30-day chart to help you practice the principles discussed in Dale Carnegie's 'How to Win Friends and Influence People.'">
   <meta property="og:description" content="A 30-day chart to help you practice the principles discussed in Dale Carnegie's 'How to Win Friends and Influence People.'">
   <meta property="og:image" content="http://www.gravatar.com/avatar/60dcb92b89386677028bb23cd0c73f0e?s=600">
-  <meta property="og:url" content="http://labs.thesocietea.org/carnegie-chart">
   <meta property="og:title" content="Dale Carnegie 30-Day Chart">
 
   <base href="/carnegie-chart/" target="" />

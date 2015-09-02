@@ -29,22 +29,22 @@
         <span class="underline">
           <a target="blank" href="http://www.amazon.com/How-Win-Friends-Influence-People/dp/0671723650">
             How to Win Friends and Influence People</a></span></p>
-      <div class="section-container auto" data-section data-options="deep_linking: true">
+      <div class="section-container auto" data-section>
         <section class="active">
           <p class="title" data-section-title><a href="#chart">Chart</a></p>
-          <div class="content" data-slug="chart" data-section-content data-html="chart">
+          <div class="content" data-slug="chart" data-section-content>
             <?php include 'includes/chart.php'; ?>
           </div>
         </section>
         <section>
           <p class="title" data-section-title><a id="description" href="#descriptions">Descriptions</a></p>
-          <div class="content" data-slug="descriptions" data-section-content data-html="descriptions">
+          <div class="content" data-slug="descriptions" data-section-content>
             <?php include 'includes/descriptions.php'; ?>
           </div>
         </section>
         <section>
           <p class="title" data-section-title><a href="#about">How It Works</a></p>
-          <div class="content" data-slug="about" data-section-content data-html="about">
+          <div class="content" data-slug="about" data-section-content>
             <?php include 'includes/about.php'; ?>
           </div>
         </section>

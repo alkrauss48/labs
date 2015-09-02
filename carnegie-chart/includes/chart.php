@@ -245,7 +245,7 @@
       <p><b>Weeks 3 &amp; 4</b> revolve around the concept of truly understanding other people's
       motives and emotions, and building off of that understanding to influence
       them so they will in turn become more accepting about your thoughts and views.
-      Your goal is build a foundation of firm respect from other people by showing that you care about
+      Your goal is to build a foundation of firm respect from other people by showing that you care about
       their thoughts and interests. Building that respect is one of the most
       important concepts throughout this whole program, and once you have started gaining it,
       you can really begin to influence others.

@@ -31,6 +31,7 @@
           <h6 class="center">3</h6>
           <ul class="square">
             <li><a id="group1_1">Don't criticize, condemn, or complain</a></li>
+            <hr />
             <li><a id="group1_3">Arouse in the other person an eager want</a></li>
           </ul>
         </div>
@@ -40,6 +41,7 @@
           <h6 class="center">4</h6>
           <ul class="square">
             <li><a id="group1_1">Don't criticize, condemn, or complain</a></li>
+            <hr />
             <li><a id="group1_2">Give honest and sincere appreciation</a></li>
           </ul>
         </div>
@@ -49,6 +51,7 @@
           <h6 class="center">5</h6>
           <ul class="square">
             <li><a id="group1_2">Give honest and sincere appreciation</a></li>
+            <hr />
             <li><a id="group1_3">Arouse in the other person an eager want</a></li>
           </ul>
         </div>
@@ -78,6 +81,7 @@
           <h6 class="center">6</h6>
           <ul class="square">
             <li><a id="group2_2">Smile</a></li>
+            <hr />
             <li><a id="group2_1">Become genuinely interested in other people</a></li>
           </ul>
         </div>
@@ -87,6 +91,7 @@
           <h6 class="center">7</h6>
           <ul class="square">
             <li><a id="group2_2">Smile</a></li>
+            <hr />
             <li><a id="group2_3">Use a person's name</a></li>
           </ul>
         </div>
@@ -96,7 +101,9 @@
           <h6 class="center">8</h6>
           <ul class="square">
             <li><a id="group2_2">Smile</a></li>
+            <hr />
             <li><a id="group2_3">Use a person's name</a></li>
+            <hr />
             <li><a id="group2_4">Encourage others to talk about themselves</a></li>
           </ul>
         </div>
@@ -106,7 +113,9 @@
           <h6 class="center">9</h6>
           <ul class="square">
             <li><a id="group2_2">Smile</a></li>
+            <hr />
             <li><a id="group2_4">Encourage others to talk about themselves</a></li>
+            <hr />
             <li><a id="group2_6">Make the other person feel important</a></li>
           </ul>
         </div>
@@ -116,6 +125,7 @@
           <h6 class="center">10</h6>
           <ul class="square">
             <li><a id="group2_5">Talk in terms of the other person's interest</a></li>
+            <hr />
             <li><a id="group2_6">Make the other person feel important</a></li>
           </ul>
         </div>
@@ -146,6 +156,7 @@
           <h6 class="center">11</h6>
           <ul class="square">
             <li><a id="group3_1">Avoid argumentation</a></li>
+            <hr />
             <li><a id="group3_2">Never say "You're wrong"</a></li>
           </ul>
         </div>
@@ -155,6 +166,7 @@
           <h6 class="center">12</h6>
           <ul class="square">
             <li><a id="group3_3">If you are wrong, admit it quickly and emphatically</a></li>
+            <hr />
             <li><a id="group3_6">Let the other person do a great deal of talking</a></li>
           </ul>
         </div>
@@ -164,6 +176,7 @@
           <h6 class="center">13</h6>
           <ul class="square">
             <li><a id="group3_6">Let the other person do a great deal of talking</a></li>
+            <hr />
             <li><a id="group3_9">Be sympathetic with others' ideas and desires</a></li>
           </ul>
         </div>
@@ -173,6 +186,7 @@
           <h6 class="center">14</h6>
           <ul class="square">
             <li><a id="group3_2">Never say "You're wrong"</a></li>
+            <hr />
             <li><a id="group3_8">See things from the other's point of view</a></li>
           </ul>
         </div>
@@ -182,6 +196,7 @@
           <h6 class="center">15</h6>
           <ul class="square">
             <li><a id="group3_5">Get the other person saying "yes, yes" immediately</a></li>
+            <hr />
             <li><a id="group3_7">Let the other person feel that the idea is his or hers</a></li>
           </ul>
         </div>
@@ -198,6 +213,7 @@
           <h6 class="center">16</h6>
           <ul class="square">
             <li><a id="group3_1">Avoid argumentation</a></li>
+            <hr />
             <li><a id="group3_9">Be sympathetic with others' ideas and desires</a></li>
           </ul>
         </div>
@@ -207,6 +223,7 @@
           <h6 class="center">17</h6>
           <ul class="square">
             <li><a id="group3_3">If you are wrong, admit it quickly and emphatically</a></li>
+            <hr />
             <li><a id="group3_4">Begin in a friendly way</a></li>
           </ul>
         </div>
@@ -216,6 +233,7 @@
           <h6 class="center">18</h6>
           <ul class="square">
             <li><a id="group3_8">See things from the other's point of view</a></li>
+            <hr />
             <li><a id="group3_10">Appeal to the nobler motives</a></li>
           </ul>
         </div>
@@ -225,6 +243,7 @@
           <h6 class="center">19</h6>
           <ul class="square">
             <li><a id="group3_5">Get the other person saying "yes, yes" immediately</a></li>
+            <hr />
             <li><a id="group3_11">Dramatize your ideas</a></li>
           </ul>
         </div>
@@ -234,6 +253,7 @@
           <h6 class="center">20</h6>
           <ul class="square">
             <li><a id="group3_4">Begin in a friendly way</a></li>
+            <hr />
             <li><a id="group3_12">Throw down a challenge</a></li>
           </ul>
         </div>
@@ -278,6 +298,7 @@
           <h6 class="center">21</h6>
           <ul class="square">
             <li><a id="group4_1">Begin with praise and honest appreciation</a></li>
+            <hr />
             <li><a id="group4_6">Praise every improvement, no matter how small</a></li>
           </ul>
         </div>
@@ -287,6 +308,7 @@
           <h6 class="center">22</h6>
           <ul class="square">
             <li><a id="group4_3">Talk about your own mistakes before criticizing others</a></li>
+            <hr />
             <li><a id="group4_7">Give the other person a fine reputation to live up to</a></li>
           </ul>
         </div>
@@ -296,6 +318,7 @@
           <h6 class="center">23</h6>
           <ul class="square">
             <li><a id="group4_1">Begin with praise and honest appreciation</a></li>
+            <hr />
             <li><a id="group4_4">Ask questions instead of giving direct orders</a></li>
           </ul>
         </div>
@@ -305,6 +328,7 @@
           <h6 class="center">24</h6>
           <ul class="square">
             <li><a id="group4_2">Call attention to people's mistakes indirectly</a></li>
+            <hr />
             <li><a id="group4_8">Use encouragement. Make the fault seem easy to correct.</a></li>
           </ul>
         </div>
@@ -314,6 +338,7 @@
           <h6 class="center">25</h6>
           <ul class="square">
             <li><a id="group4_5">Let the other person save face</a></li>
+            <hr />
             <li><a id="group4_7">Give the other person a fine reputation to live up to</a></li>
           </ul>
         </div>
@@ -330,6 +355,7 @@
           <h6 class="center">26</h6>
           <ul class="square">
             <li><a id="group4_3">Talk about your own mistakes before criticizing others</a></li>
+            <hr />
             <li><a id="group4_6">Praise every improvement, no matter how small</a></li>
           </ul>
         </div>
@@ -339,6 +365,7 @@
           <h6 class="center">27</h6>
           <ul class="square">
             <li><a id="group4_1">Begin with praise and honest appreciation</a></li>
+            <hr />
             <li><a id="group4_6">Praise every improvement, no matter how small</a></li>
           </ul>
         </div>
@@ -348,6 +375,7 @@
           <h6 class="center">28</h6>
           <ul class="square">
             <li><a id="group4_1">Begin with praise and honest appreciation</a></li>
+            <hr />
             <li><a id="group4_5">Let the other person save face</a></li>
           </ul>
         </div>
@@ -357,6 +385,7 @@
           <h6 class="center">29</h6>
           <ul class="square">
             <li><a id="group4_6">Praise every improvement, no matter how small</a></li>
+            <hr />
             <li><a id="group4_7">Give the other person a fine reputation to live up to</a></li>
           </ul>
         </div>
@@ -366,6 +395,7 @@
           <h6 class="center">30</h6>
           <ul class="square">
             <li><a id="group4_2">Call attention to people's mistakes indirectly</a></li>
+            <hr />
             <li><a id="group4_9">Make the other person happy about doing what you suggest</a></li>
           </ul>
         </div>

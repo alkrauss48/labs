@@ -62,6 +62,12 @@ body {
 
 .panel ul{
   font-size: .75em;
+  list-style: none;
+}
+
+.panel ul hr {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 div[id^="description"] {

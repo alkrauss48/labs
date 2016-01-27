@@ -4,12 +4,12 @@
   $('.submit-message').submit(function(event){
     event.preventDefault();
 
-    $('.messages').append('<p>' + $('#my-message').val() + '</p>');
+    $('.messages').append('<tr><td>' + $('#my-message').val() + '</td></tr>');
     socket.emit('message', $('#my-message').val());
     $('#my-message').val('');
   });
 
   socket.on('message', function (data) {
-    $('.messages').append('<p>' + data.message + '</p>');
+    $('.messages').append('<tr><td>' + data.message + '</td></tr>');
   });
 })();

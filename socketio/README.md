@@ -9,7 +9,7 @@ node index # navigate to localhost:7070
 
 ## Deploy
 
-To run the node process as a daemon, I recommend using the (forever)[https://www.npmjs.com/package/forever] npm
+To run the node process as a daemon, I recommend using the [forever](https://www.npmjs.com/package/forever) npm
 package.
 
 If you put nginx behind this project (or any other project using WebSockets),

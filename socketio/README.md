@@ -12,9 +12,9 @@ node index # navigate to localhost:7070
 To run the node process as a daemon, I recommend using the [forever](https://www.npmjs.com/package/forever) npm
 package.
 
-If you put nginx behind this project (or any other project using WebSockets),
+If you put nginx in front of this project (or any other project using WebSockets),
 make sure your virtual host is configured properly to accept the Upgrade
-header. Here's a basic config example.
+header (you need this to "upgrade" your communication to use the WebSockets protocol). Here's a basic config example.
 
 ```
 server {

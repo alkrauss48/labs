@@ -73,13 +73,11 @@
 
               <!-- Feature -->
                 <section>
-                  <a href="d3/subway" class="image featured"><img src="images/d3_th.jpg" alt="" /></a>
+                  <a href="http://websockets.thesocietea.org" class="image featured"><img src="images/websockets_th.jpg" alt="" /></a>
                   <header>
-                    <h3>Interactive D3 Demo</h3>
+                    <h3>Socket.io Demo</h3>
                   </header>
-                  <p><a href="http://d3js.org/" target="blank">D3.js</a> is
-                  a javascript library for creating SVG graphics based on data
-                  from json documents.</p>
+                  <p>Check out this little demo using <a href="http://socket.io" target="blank">socket.io</a> to see how WebSockets work in the wild!</p>
                 </section>
 
             </div>
@@ -193,6 +191,20 @@
                   </header>
                   <p>This is a fun, small little demo which uses pure CSS to <strong>flip a page</strong> over,
                     and then render text using <a target="_blank" href="http://www.mattboldt.com/demos/typed-js/">Typed.js</a></p>
+                </section>
+
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="d3/subway" class="image featured"><img src="images/d3_th.jpg" alt="" /></a>
+                  <header>
+                    <h3>Interactive D3 Demo</h3>
+                  </header>
+                  <p><a href="http://d3js.org/" target="blank">D3.js</a> is
+                  a javascript library for creating SVG graphics based on data
+                  from json documents.</p>
                 </section>
 
             </div>

@@ -4,6 +4,11 @@ var app = express();
 var server = require('http').createServer(app);
 var sanitizeHtml = require('sanitize-html');
 
+var rate = 5;
+var per  = 8;
+var allowance = rate;
+var last_check = new Date();
+
 // Routing
 app.use(express.static(__dirname + '/public'));
 
@@ -12,11 +17,22 @@ io.on('connection', function(socket){
 
   socket.on('message', function (data) {
     console.log(data);
+    var current = new Date();
+    var time_passed = Math.floor((current- last_check) / 1000);
+    last_check = current;
+    allowance += time_passed * (rate / per);
+    if (allowance > rate){
+      allowance = rate; // throttle
+    }
 
-    // we tell the client to execute 'message'
-    socket.broadcast.emit('message', {
-      message: sanitizeHtml(data)
-    });
+    if !(allowance < 1.0){
+      // we tell the client to execute 'message'
+      socket.broadcast.emit('message', {
+        message: sanitizeHtml(data)
+      });
+      allowance -= 1.0;
+    }
+
   });
 });
 

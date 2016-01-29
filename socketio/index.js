@@ -2,6 +2,7 @@ var http = require('http');
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
+var sanitizeHtml = require('sanitize-html');
 
 // Routing
 app.use(express.static(__dirname + '/public'));
@@ -14,7 +15,7 @@ io.on('connection', function(socket){
 
     // we tell the client to execute 'message'
     socket.broadcast.emit('message', {
-      message: data
+      message: sanitizeHtml(data)
     });
   });
 });

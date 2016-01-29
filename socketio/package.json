@@ -15,5 +15,8 @@
   "devDependencies": {
     "express": "^4.13.4",
     "socket.io": "^1.4.4"
+  },
+  "dependencies": {
+    "sanitize-html": "^1.11.3"
   }
 }

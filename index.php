@@ -44,14 +44,15 @@
 
               <!-- Feature -->
                 <section>
-                  <a href="geojson-demo" class="image featured"><img
-                    src="images/google_maps_th.jpg" alt="" /></a>
+                  <a href="carnegie-chart" class="image featured"><img
+                    src="images/carnegie_chart_th.jpg" alt="" /></a>
                   <header>
-                    <h3>GeoJSON Demo</h3>
+                    <h3>Dale Carnegie Chart</h3>
                   </header>
-                  <p>This is a little demo using the <strong>Google Maps
-                    API</strong> and GeoJSON files. Check out how I use them to
-                  color specific geographical regions.</p>
+                  <p>For those of you who have read <a
+                    target="blank" href="http://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034">How to Win
+                    Friends and Influence People</a>, you know how powerful it
+                  is. This chart will help you practice that book.</p>
                 </section>
 
             </div>
@@ -136,15 +137,14 @@
 
               <!-- Feature -->
                 <section>
-                  <a href="carnegie-chart" class="image featured"><img
-                    src="images/carnegie_chart_th.jpg" alt="" /></a>
+                  <a href="geojson-demo" class="image featured"><img
+                    src="images/google_maps_th.jpg" alt="" /></a>
                   <header>
-                    <h3>Dale Carnegie Chart</h3>
+                    <h3>GeoJSON Demo</h3>
                   </header>
-                  <p>For those of you who have read <a
-                    target="blank" href="http://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034">How to Win
-                    Friends and Influence People</a>, you know how powerful it
-                  is. This chart will help you practice that book.</p>
+                  <p>This is a little demo using the <strong>Google Maps
+                    API</strong> and GeoJSON files. Check out how I use them to
+                  color specific geographical regions.</p>
                 </section>
 
             </div>

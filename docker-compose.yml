@@ -2,16 +2,21 @@ version: "3.9"
 
 services:
   web:
-    image: nginx:1.21.3-alpine
+    build: ./docker/nginx/
     ports:
       - "8080:80"
-    volumes:
-      - .:/code
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    volumes_from:
+      - app-data
     links:
       - php
 
   php:
     image: php:7-fpm
+    volumes_from:
+      - app-data
+
+  app-data:
+    image: php:7-fpm
     volumes:
-      - .:/code
+      - .:/var/www/html/
+    command: "true"

@@ -1,22 +1,18 @@
 version: "3.9"
 
+x-common: &common
+  volumes:
+    - .:/var/www/html
+
 services:
   web:
+    <<: *common
     build: ./docker/nginx/
     ports:
       - "8080:80"
-    volumes_from:
-      - app-data
     links:
       - php
 
   php:
+    <<: *common
     image: php:7-fpm
-    volumes_from:
-      - app-data
-
-  app-data:
-    image: php:7-fpm
-    volumes:
-      - .:/var/www/html/
-    command: "true"

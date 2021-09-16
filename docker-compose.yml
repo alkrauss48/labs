@@ -7,7 +7,9 @@ x-common: &common
 services:
   web:
     <<: *common
-    build: ./docker/nginx/
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
     ports:
       - "8080:80"
     links:
@@ -15,4 +17,6 @@ services:
 
   php:
     <<: *common
-    image: php:7-fpm
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile

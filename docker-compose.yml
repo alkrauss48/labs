@@ -12,8 +12,6 @@ services:
       dockerfile: docker/nginx/Dockerfile
     ports:
       - "8080:80"
-    links:
-      - php
 
   php:
     <<: *common

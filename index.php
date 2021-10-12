@@ -103,16 +103,15 @@
             <div class="4u">
               <!-- Feature -->
                 <section>
-                  <a href="/open-states-api" class="image featured"><img
-                    src="images/openstates_th.jpg" alt="" /></a>
+                  <a href="/word-up" class="image featured"><img
+                    src="images/word-up.jpg" alt="" /></a>
                   <header>
-                    <h3>OpenStates API Demo</h3>
+                    <h3>Word UP!</h3>
                   </header>
                   <p>
-                    By using the <a target="_blank" href="http://openstates.org/">OpenStates API</a>
-                    in combination with Yahoo's geolocation API and <strong>async.js</strong>, we can
-                    load our state legislators and avoid callback hell! Error messages with
-                    <a href="https://github.com/t4t5/sweetalert" target="_blank">SweetAlert</a> too.
+                    This is a simple and sweet app, built in collaboration with the open source community,
+                    geared towards showing messages to speakers and presenters via a large screen.
+                    Shoutout to <a href="https://github.com/silashuereca" target="_blank">@silashuereca</a> for completing the project!
                   </p>
                 </section>
             </div>
@@ -228,7 +227,7 @@
       <div id="footer-wrapper">
         <div id="footer" class="container">
           <header>
-            <h2>If you enjoyed these projects, <a target="blank" href="http://thesocietea.org">Check out my main site</a></h2>
+            <h2>If you enjoyed these projects, <a target="blank" href="https://thecodeboss.dev">Check out my main site</a></h2>
           </header>
             <div class="12u">
               <section>
@@ -236,17 +235,17 @@
                 design-based CMS sites to hardcore back-end apps and APIs. I
                 only post small personal demos and projects here, but if you want to
                 see the cool things I've done at various companies or larger
-                projects, check out my <a target="blank" href="http://thesocietea.org">main
+                projects, check out my <a target="blank" href="https://thecodeboss.dev">main
                 site</a> or my <a target="blank" href="https://github.com/alkrauss48">GitHub page</a></p>
                 <div style="text-align: center;" class="row">
-                  <div class="icon 4u fa-envelope">
-                    <a href="mailto:alkrauss48@gmail.com"> alkrauss48@gmail.com</a>
-                  </div>
-                  <div class="icon 4u fa-twitter">
-                    <a target="blank" href="https://twitter.com/thecodeboss"> @thecodeboss</a>
-                  </div>
                   <div class="icon 4u fa-github">
                     <a target="blank" href="https://github.com/alkrauss48"> alkrauss48</a>
+                  </div>
+                  <div class="icon 4u fa-link">
+                    <a target="blank" href="https://thecodeboss.dev"> thecodeboss.dev</a>
+                  </div>
+                  <div class="icon 4u fa-envelope">
+                    <a href="mailto:alkrauss48@gmail.com"> alkrauss48@gmail.com</a>
                   </div>
                 </div>
               </section>
@@ -255,7 +254,7 @@
         </div>
         <div id="copyright" class="container">
           <ul class="links">
-            <li>&copy; <a href="http://thesocietea.org">Aaron Krauss</a>. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>&copy; <a href="https://thecodeboss.dev">Aaron Krauss</a>. All rights reserved.</li>
           </ul>
         </div>
       </div>

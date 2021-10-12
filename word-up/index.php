@@ -38,6 +38,20 @@
         <div>
           <input type="text" class="wordup" name="wordup" id="wordup" />
         </div>
+        <hr />
+        <p>
+          Shoutout to
+          <a href="https://github.com/silashuereca" target="_blank">
+            @silashuereca
+          </a>
+          for his contributions to this app!
+        </p>
+        <p>
+          Check out the original collaborative repo here:
+          <a href="https://github.com/alkrauss48/word-up" target="_blank">
+            https://github.com/alkrauss48/word-up
+          </a>
+        </p>
       </form>
     </div>
 

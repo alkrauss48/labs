@@ -74,7 +74,26 @@
 
               <!-- Feature -->
                 <section>
-                  <a href="http://websockets.thesocietea.org" class="image featured"><img src="images/websockets_th.jpg" alt="" /></a>
+                  <a href="http://growlerfriday.com" class="image featured"><img src="images/growler-friday.jpeg" alt="Growler Friday" /></a>
+                  <header>
+                    <h3>Growler Friday</h3>
+                  </header>
+                  <p>
+                    Start off your weekend right with
+                    <a href="https://growlerfriday.com" target="_blank">Growler Friday</a>!
+                    There's a fun countdown until Friday, with a neat animation
+                    on Friday too! Don't know what a growler is? Click and find out.
+                  </p>
+                </section>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="https://websockets.thecodeboss.dev" class="image featured"><img src="images/websockets_th.jpg" alt="" /></a>
                   <header>
                     <h3>Socket.io Demo</h3>
                   </header>
@@ -82,76 +101,11 @@
                 </section>
 
             </div>
-          </div>
-          <div class="row">
             <div class="4u">
 
               <!-- Feature -->
                 <section>
-                  <a href="masonry-demo" class="image featured"><img
-                    src="images/masonry_th.jpg" alt="" /></a>
-                  <header>
-                    <h3>MasonryJS Demo</h3>
-                  </header>
-                  <p><a href="http://masonry.desandro.com/"
-                    target="blank">MasonryJS</a> is a sweet JS library which
-                  uses intense math behind the scenes to lay out your web page in a dynamic tile
-                  structure.</p>
-                </section>
-
-            </div>
-            <div class="4u">
-              <!-- Feature -->
-                <section>
-                  <a href="/word-up" class="image featured"><img
-                    src="images/word-up.jpg" alt="" /></a>
-                  <header>
-                    <h3>Word UP!</h3>
-                  </header>
-                  <p>
-                    This is a simple and sweet app, built in collaboration with the open source community,
-                    geared towards showing messages to speakers and presenters via a large screen.
-                    Shoutout to <a href="https://github.com/silashuereca" target="_blank">@silashuereca</a> for completing the project!
-                  </p>
-                </section>
-            </div>
-            <div class="4u">
-
-              <!-- Feature -->
-                <section>
-                  <a href="tea-chart" class="image featured"><img
-                    src="images/tea_chart_th.jpg" alt="" /></a>
-                  <header>
-                    <h3>Tea Chart</h3>
-                  </header>
-                  <p>This was my first step in the world of Bootstrap, so I
-                  built a tiny page to show off the different tea types and best
-                  steeping practices.</p>
-                </section>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="4u">
-
-              <!-- Feature -->
-                <section>
-                  <a href="geojson-demo" class="image featured"><img
-                    src="images/google_maps_th.jpg" alt="" /></a>
-                  <header>
-                    <h3>GeoJSON Demo</h3>
-                  </header>
-                  <p>This is a little demo using the <strong>Google Maps
-                    API</strong> and GeoJSON files. Check out how I use them to
-                  color specific geographical regions.</p>
-                </section>
-
-            </div>
-            <div class="4u">
-
-              <!-- Feature -->
-                <section>
-                  <a href="http://wiki.thesocietea.org" class="image featured"><img
+                  <a href="https://wiki.thecodeboss.dev" class="image featured"><img
                     src="images/go_wiki_th.jpg" alt="" /></a>
                   <header>
                     <h3>Go Wiki</h3>
@@ -161,6 +115,58 @@
                   collection to persist data.</p>
                 </section>
 
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="https://github.com/alkrauss48/ansible-packer-terraform-demo" class="image featured"><img
+                    src="images/hashicorp.jpeg" alt="" /></a>
+                  <header>
+                    <h3>Ansible, Packer, and Terraform Demo</h3>
+                  </header>
+                  <p>
+                    Ever wanted to learn about some cool server administration
+                    and DevOps tools?
+                    <a href="https://github.com/ansible/ansible" target="_blank">Ansible</a>
+                    and Hashicorp's
+                    <a href="https://www.packer.io/" target="_blank">Packer</a> and
+                    <a href="https://www.terraform.io/" target="_blank">Terraform</a>
+                    are a great place to start.
+                  </p>
+                </section>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="4u">
+              <!-- Feature -->
+                <section>
+                  <a href="https://github.com/alkrauss48/kubernetes" class="image featured"><img
+                    src="images/kubernetes.jpg" alt="Kubernetes" /></a>
+                  <header>
+                    <h3>My Kubernetes Config</h3>
+                  </header>
+                  <p>
+                    I've revamped all of my personal projects to have them
+                    dockerized, built through CI, and hosted with <b>Kubernetes</b>.
+                    Check out my k8s config if you want to learn more!
+                  </p>
+                </section>
+            </div>
+            <div class="4u">
+              <!-- Feature -->
+                <section>
+                  <a href="https://github.com/alkrauss48/cyrus-lyrics" class="image featured"><img
+                    src="images/cyrus-lyrics.jpeg" alt="" /></a>
+                  <header>
+                    <h3>CyrusLyrics</h3>
+                  </header>
+                  <p>
+                    A simple <b>SwiftUI</b> iOS app that I built to help me quickly find the lyrics
+                    to songs as I sang to my son. And it just got bigger from there.
+                  </p>
+                </section>
             </div>
             <div class="4u">
 
@@ -179,6 +185,21 @@
             </div>
           </div>
           <div class="row">
+            <div class="4u">
+              <!-- Feature -->
+                <section>
+                  <a href="/word-up" class="image featured"><img
+                    src="images/word-up.jpg" alt="" /></a>
+                  <header>
+                    <h3>Word Up!</h3>
+                  </header>
+                  <p>
+                    This is a simple and sweet app, built in collaboration with the open source community,
+                    geared towards showing messages to speakers and presenters via a large screen.
+                    Shoutout to <a href="https://github.com/silashuereca" target="_blank">@silashuereca</a> for completing the project!
+                  </p>
+                </section>
+            </div>
             <div class="4u">
 
               <!-- Feature -->
@@ -204,6 +225,54 @@
                   <p><a href="http://d3js.org/" target="blank">D3.js</a> is
                   a javascript library for creating SVG graphics based on data
                   from json documents.</p>
+                </section>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="geojson-demo" class="image featured"><img
+                    src="images/google_maps_th.jpg" alt="" /></a>
+                  <header>
+                    <h3>GeoJSON Demo</h3>
+                  </header>
+                  <p>This is a little demo using the <strong>Google Maps
+                    API</strong> and GeoJSON files. Check out how I use them to
+                  color specific geographical regions.</p>
+                </section>
+
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="tea-chart" class="image featured"><img
+                    src="images/tea_chart_th.jpg" alt="" /></a>
+                  <header>
+                    <h3>Tea Chart</h3>
+                  </header>
+                  <p>This was my first step in the world of Bootstrap, so I
+                  built a tiny page to show off the different tea types and best
+                  steeping practices.</p>
+                </section>
+
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="masonry-demo" class="image featured"><img
+                    src="images/masonry_th.jpg" alt="" /></a>
+                  <header>
+                    <h3>MasonryJS Demo</h3>
+                  </header>
+                  <p><a href="http://masonry.desandro.com/"
+                    target="blank">MasonryJS</a> is a sweet JS library which
+                  uses intense math behind the scenes to lay out your web page in a dynamic tile
+                  structure.</p>
                 </section>
 
             </div>

@@ -220,6 +220,6 @@
     <script>
       d3.json("subway_wait_mean.json", draw);
     </script>
-    <?php include '../analytics.php'; ?>
+    <?php include '../../analytics.php'; ?>
   </body>
 </html>

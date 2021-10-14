@@ -26,7 +26,7 @@
 
           <!-- Logo -->
             <h1 id="logo">My Labs</h1>
-            <p>A repository of fun projects by Aaron Krauss</p>
+            <p>A repository of fun personal projects by Aaron Krauss</p>
 
           <!-- Nav -->
 
@@ -60,13 +60,18 @@
 
               <!-- Feature -->
                 <section>
-                  <a href="babylon-world-demo" class="image featured"><img src="images/babylon_th.jpg" alt="" /></a>
+                  <a href="https://resume.thecodeboss.dev" class="image featured">
+                    <img src="images/resumehaus.jpeg" alt="Resume Haus" />
+                  </a>
                   <header>
-                    <h3>BabylonJS Demo</h3>
+                    <h3>Resume Haus</h3>
                   </header>
-                  <p><a href="http://babylonjs.com/" target="blank">BabylonJS</a> is a popular library for
-                  creating 3D environments using <strong>WebGL</strong>. Use first person
-                  shooter controls to move, and spacebar to toggle gravity!</p>
+                  <p>
+                    ResumeHaus is built in
+                    <a href="https://craftcms.com/" target="_blank">Craft CMS</a>
+                    and allows users to build and host their own
+                    resumes with an elegant UI.
+                  </p>
                 </section>
 
             </div>
@@ -134,6 +139,56 @@
                     <a href="https://www.terraform.io/" target="_blank">Terraform</a>
                     are a great place to start.
                   </p>
+                </section>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="babylon-world-demo" class="image featured"><img src="images/babylon_th.jpg" alt="" /></a>
+                  <header>
+                    <h3>BabylonJS Demo</h3>
+                  </header>
+                  <p><a href="http://babylonjs.com/" target="blank">BabylonJS</a> is a popular library for
+                  creating 3D environments using <strong>WebGL</strong>. Use first person
+                  shooter controls to move, and spacebar to toggle gravity!</p>
+                </section>
+
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="js-game-dev/breakout-phaser" class="image featured"><img
+                    src="images/breakout-phaser.jpg" alt="" /></a>
+                  <header>
+                    <h3>Breakout - Phaser.js</h3>
+                  </header>
+                  <p>
+                    Remember the old-school breakout game? Check out this
+                    version of it built in
+                    <a href="https://phaser.io/" target="_blank">Phaser.js</a>
+                    - one of JavaScript's most powerful game engines.
+                  </p>
+                </section>
+
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="js-game-dev/pong-vanilla-js" class="image featured">
+                    <img src="images/pong-vanilla-js.png" alt="Pong - Vanilla JS" />
+                  </a>
+                  <header>
+                    <h3>Pong - Vanilla JS</h3>
+                  </header>
+                  <p>But who says you <i>need</i> a fancy framework or game engine to
+                  make a game? Here's a perfectly good version of Pong,
+                  written in <b>less than 100 lines of plain JavaScript</b>.</p>
                 </section>
 
             </div>
@@ -277,9 +332,12 @@
 
             </div>
           </div>
-          <ul class="actions">
-            <li><a href="https://github.com/alkrauss48/labs" class="button icon fa-arrow-right">Check out the GitHub
-              Repo</a></li>
+          <ul class="actions" style="margin-top: 5em;">
+            <li>
+              <a href="https://github.com/alkrauss48/labs" class="button icon fa-arrow-right">
+                Check out the <u>Labs</u> GitHub Repo
+              </a>
+            </li>
           </ul>
         </section>
       </div>

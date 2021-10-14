@@ -1,4 +1,4 @@
-# [Labs](http://labs.thesocietea.org)
+# [Labs](http://labs.thecodeboss.dev)
 ### By Aaron Krauss
 
 This is a collection of fun demos and other projects that I want to store

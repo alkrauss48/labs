@@ -18,7 +18,7 @@
 
     <meta name="description" content="A repository of fun personal projects by Aaron Krauss">
     <meta property="og:description" content="A repository of fun personal projects by Aaron Krauss">
-    <meta property="og:image" content="https://labs.thecodeboss.dev/labs-og-image.jpg">
+    <meta property="og:image" content="https://labs.thecodeboss.dev/images/labs-og-image.jpg">
     <meta property="og:title" content="Labs | Aaron Krauss">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://labs.thecodeboss.dev" />

@@ -3,7 +3,6 @@
   <head>
     <title>Labs | Aaron Krauss</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
@@ -16,6 +15,16 @@
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/style-desktop.css" />
     </noscript>
+
+    <meta name="description" content="A repository of fun personal projects by Aaron Krauss">
+    <meta property="og:description" content="A repository of fun personal projects by Aaron Krauss">
+    <meta property="og:image" content="https://labs.thecodeboss.dev/labs-og-image.jpg">
+    <meta property="og:title" content="Labs | Aaron Krauss">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://labs.thecodeboss.dev" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@thecodeboss" />
+    <meta name="twitter:creator" content="@thecodeboss" />
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
   </head>
   <body class="homepage">

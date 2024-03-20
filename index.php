@@ -45,9 +45,6 @@
     <!-- Features -->
       <div id="features-wrapper">
         <section id="features" class="container">
-          <header>
-            <h2>Take a look at what I've been working on</h2>
-          </header>
           <div class="row">
             <div class="4u">
 
@@ -69,25 +66,6 @@
 
               <!-- Feature -->
                 <section>
-                  <a href="https://resume.thecodeboss.dev" class="image featured">
-                    <img src="images/resumehaus.jpeg" alt="Resume Haus" />
-                  </a>
-                  <header>
-                    <h3>Resume Haus</h3>
-                  </header>
-                  <p>
-                    ResumeHaus is built in
-                    <a href="https://craftcms.com/" target="_blank">Craft CMS</a>
-                    and allows users to build and host their own
-                    resumes with an elegant UI.
-                  </p>
-                </section>
-
-            </div>
-            <div class="4u">
-
-              <!-- Feature -->
-                <section>
                   <a href="http://growlerfriday.com" class="image featured"><img src="images/growler-friday.jpeg" alt="Growler Friday" /></a>
                   <header>
                     <h3>Growler Friday</h3>
@@ -101,8 +79,6 @@
                 </section>
 
             </div>
-          </div>
-          <div class="row">
             <div class="4u">
 
               <!-- Feature -->
@@ -115,20 +91,22 @@
                 </section>
 
             </div>
+          </div>
+          <div class="row">
             <div class="4u">
-
               <!-- Feature -->
                 <section>
-                  <a href="https://wiki.thecodeboss.dev" class="image featured"><img
-                    src="images/go_wiki_th.jpg" alt="" /></a>
+                  <a href="https://github.com/alkrauss48/kubernetes" class="image featured"><img
+                    src="images/kubernetes.jpg" alt="Kubernetes" /></a>
                   <header>
-                    <h3>Go Wiki</h3>
+                    <h3>My Kubernetes Config</h3>
                   </header>
-                  <p>My first real <strong>Go</strong> project! Go Wiki is a
-                  fully functioning wiki server built in Go that is tied to a <strong>MongoDB</strong>
-                  collection to persist data.</p>
+                  <p>
+                    I've revamped all of my personal projects to have them
+                    dockerized, built through CI, and hosted with <b>Kubernetes</b>.
+                    Check out my k8s config if you want to learn more!
+                  </p>
                 </section>
-
             </div>
             <div class="4u">
 
@@ -148,6 +126,21 @@
                     <a href="https://www.terraform.io/" target="_blank">Terraform</a>
                     are a great place to start.
                   </p>
+                </section>
+
+            </div>
+            <div class="4u">
+
+              <!-- Feature -->
+                <section>
+                  <a href="tea-timer" class="image featured"><img
+                    src="images/tea_timer_th.jpg" alt="" /></a>
+                  <header>
+                    <h3>Tea Timers</h3>
+                  </header>
+                  <p>I love <strong>Tea</strong>, so I thought I would build
+                  some tea timers to complement my tea chart and help any other
+                  tea enthusiasts with preparing loose-leaf tea.</p>
                 </section>
 
             </div>
@@ -198,52 +191,6 @@
                   <p>But who says you <i>need</i> a fancy framework or game engine to
                   make a game? Here's a perfectly good version of Pong,
                   written in <b>less than 100 lines of plain JavaScript</b>.</p>
-                </section>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="4u">
-              <!-- Feature -->
-                <section>
-                  <a href="https://github.com/alkrauss48/kubernetes" class="image featured"><img
-                    src="images/kubernetes.jpg" alt="Kubernetes" /></a>
-                  <header>
-                    <h3>My Kubernetes Config</h3>
-                  </header>
-                  <p>
-                    I've revamped all of my personal projects to have them
-                    dockerized, built through CI, and hosted with <b>Kubernetes</b>.
-                    Check out my k8s config if you want to learn more!
-                  </p>
-                </section>
-            </div>
-            <div class="4u">
-              <!-- Feature -->
-                <section>
-                  <a href="https://github.com/alkrauss48/cyrus-lyrics" class="image featured"><img
-                    src="images/cyrus-lyrics.jpeg" alt="" /></a>
-                  <header>
-                    <h3>CyrusLyrics</h3>
-                  </header>
-                  <p>
-                    A simple <b>SwiftUI</b> iOS app that I built to help me quickly find the lyrics
-                    to songs as I sang to my son. And it just got bigger from there.
-                  </p>
-                </section>
-            </div>
-            <div class="4u">
-
-              <!-- Feature -->
-                <section>
-                  <a href="tea-timer" class="image featured"><img
-                    src="images/tea_timer_th.jpg" alt="" /></a>
-                  <header>
-                    <h3>Tea Timers</h3>
-                  </header>
-                  <p>I love <strong>Tea</strong>, so I thought I would build
-                  some tea timers to complement my tea chart and help any other
-                  tea enthusiasts with preparing loose-leaf tea.</p>
                 </section>
 
             </div>
@@ -374,14 +321,11 @@
                 projects, check out my <a target="blank" href="https://thecodeboss.dev">main
                 site</a> or my <a target="blank" href="https://github.com/alkrauss48">GitHub page</a></p>
                 <div style="text-align: center;" class="row">
-                  <div class="icon 4u fa-github">
+                  <div class="icon 6u fa-github">
                     <a target="blank" href="https://github.com/alkrauss48"> alkrauss48</a>
                   </div>
-                  <div class="icon 4u fa-link">
+                  <div class="icon 6u fa-link">
                     <a target="blank" href="https://thecodeboss.dev"> thecodeboss.dev</a>
-                  </div>
-                  <div class="icon 4u fa-envelope">
-                    <a href="mailto:alkrauss48@gmail.com"> alkrauss48@gmail.com</a>
                   </div>
                 </div>
               </section>
